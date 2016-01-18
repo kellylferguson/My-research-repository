@@ -1,0 +1,32 @@
+# Digital History 5702w
+### Why am I taking this course?
+   
+At first glance it may have seemed like an odd choice of course for someone like me. I am an extremely unskilled person when it comes to computers. When I originally signed up for this course, the thought of my computer illiteracy actually did not even cross my mind, I simply thought that the course sounded interesting and I knew that I wanted to leave space to take the public history course about museums in my second year. As I began the my MA, however, and started thinking about the courses I had signed up for, I started to have some doubts. Was it really the best fit for someone with so little experience in computers? Then I read about some of the work being done through online collaboration and website building in public history. One project in particular, [*City of Memory,*] which used publically submitted memories about particular locations in New York City to create an interactive "memory map." 
+
+[*City of Memory,*]: http://www.cityofmemory.org/map/index.php
+
+This project illustrated to me the possiblities computers and the internet had and I realized that a hesitation in learning how to use these tools would only limit myself in the long run.
+
+### What do I hope to achieve?
+    
+As is probably clear already, my main goal for this course is to leave it with an understanding of how to connect the bridge between the digital world and public history in my own work. More than learning how to use a specific program, I want to learn how to teach myself these skills in the long run. The intimidation factor for using computers in a real way, rather than just the simple researching and email way that I am now, is something that I hope this course will help me overcome. Having a strong enough base of knowledge to be confident in continuing to learn about the digital aspect of history. Basically my current relationship with computers is this:
+
+![Alt text](https://pixabay.com/static/uploads/photo/2013/07/12/18/37/broken-153601_960_720.png)
+
+By the end I'm hoping to have a relationship with computers closer to this: 
+
+![Alt text](https://pixabay.com/static/uploads/photo/2013/07/12/13/51/happy-147445_960_720.png)
+
+### Do I have any experience at all?
+
+The closest thing I have to what I think could be in "relevant experience" for this class is that I have made and maintained a blog for *HIST 5700: Introduction to Public History* last semester. The blog can be found [here]. This blog did not take many skills, as it was created using wordpress, however it did get me in the habit of writing weekly and posting those writings on the internet. Also, since beginning this course last week I did set up a github account successfully which can be found at: 
+
+[https://github.com/kellylferguson].
+
+[here]: https://kfhistory.wordpress.com/
+
+I suppose one other skill that I am slowly gaining is in using markdown, although I am still heavily relying on this handy [cheatsheet]. Despite these minor skills, I know there is much more to learn and I hope I'm able to learn it in this class.
+
+[cheatsheet]: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+
+
