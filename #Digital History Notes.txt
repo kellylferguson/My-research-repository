@@ -1,0 +1,93 @@
+#Digital History Notes
+January 11, 2016
+The problem with online databases. They are created and curated by humans, not objective. Problematic. 
+
+Git and github. Git takes pictures of changes to file, github allows you to share with others
+
+Searching online newspapers. We don’t have a theory of search. We haven’t allowed search engines to find synonyms etc. our search engines are subtly changing our research and results. People cite the online globe and mail, cite it as the paper copy, but don’t acknowledge the digital version. We should because OCR is really bad for newspapers, because OCR is designed for legal documents, with clear texts, with newspapers, will make errors. Keyword search misses up to 40%.  A lot of trouble when historians pretend to look at physical object, versus digital. 
+
+White guys in southern California, making software that reflects to world view of white guys from southern California.
+The DiRT directory for digital tools
+
+Two options 1) teach you to do data-y stuff. Will work for a while, then everything will change, become obsolete 2) teach world how to do data-y stuff as we learn how to do it.  
+Git.github.com/shawngraham
+
+Each week, people will do best at following a tutorial, then you will teach it to us while pointing out the gotchas the things that don’t make sense, connect the tutorial to readings from this class, other classes, research etc. Tie it into our historical practice.
+Set up a github account, don’t have to use real name if you choose not to. Can, can be useful in growing a professional identity online, but also don’t want to open yourself up. 
+
+Send top three topic choices
+
+Look for assumptions that the tool is making and how that will influence your research.
+
+Git – software invented by the guy who invented linux, sits on computer, watching specific folders. Ask it take a snapshot of folder. Can share snapshots with others. Not necessarily intuitive, common sense. Hub is online place for putting snapshots up to share with others. 
+
+PyKwiki uses markdown run through github, using command line on pc to install. Uses python programming language
+
+Need a text editor. Let’s you work with any type of file. Either atom.io or sublimetext.com
+
+To get started, need a text editor, a github, work through first 3 exercises from other class by next week.
+
+Notational velocity, a series of infinite notecards. For mac. For windows resophnotes
+
+$ means mac, not windows.
+
+Avoid mkdocs on windows 10
+
+Make notes on how you get to each point in case something breaks. 
+
+January 18
+Keep notes in a open notebook keeping track of what you do. Add, commit, push to github. Add and commit two parts of same action. 
+
+Step 1 and step 2.  Add to it, and then commit a snapshot. Keep in a repository, commit to desktop tracking folder
+
+Final project? To reveal the mysteries of the DH topic of today’s conversation. Bundling up digital history skills that we learn to show and teach others. “expert systems” shall make a “clippy” for digital history. Google “expert systems” and “WTFCSV?”
+
+Twine as an expert system. What do video games actually do? How to play-instructions, manipulates emotions..
+
+Download hypothes.is to add annotations to tutorials (programing historian)
+
+Use philome.la to publically share games with the world
+
+Final project should explain to people how to do digital history, what is digital history
+
+Next week do tutorial, tie it to our research, where are you coming from in terms of historical practice. 
+
+itch.io allows you to monetize your twine
+ 
+January 25
+Github twine-wrapper. Twine as a platform for interactive experiences. Designed for mac, not windows. Will take game created and turn it into a desktop app. Windows are on their own to figure it out. Also web2executable, does the same thing. At the end you have a formal program. Good for cv, more impressive than just making a website. 
+
+github/tmberton research notebook- pandoc tutorial
+
+Markdown tutorial: pretty straightforward. The handbook exercises had a very similar tutorial. No problems with it, showed examples. Laurel writes in html, not markdown. Felt that the transition was difficult. Html has a lot of non-texual stuff, whereas markdown is really stripped down, anything can read it. Easy to write and read. Can use editors on smartphone or tablets. Columns in markdown: google it. classeur.io looks like a notebook, can tie it github but can't find the files on own machines. Markdown allows you to focus on more than just the format. Typora.io merges preview with markdown, can get in the way. Markdown strips away all of the other stuff. Time to get crap done. Says there are only  four levels of headers, can go up to 6 levels of headers. 
+
+Pandoc tutorial: Can use pandoc to go back from word documents to a plain text, markdown. Zotero has a web extension to click and get citation. Can keep reading notes in it, can share citations, can write notes in markdown in zotero. has a plug in for word. LaTeX, turns things into pdfs (already have). YAML block. Yet Another Markdown Language, tell it the important stuff. 
+----
+Title: 
+Author:
+Date:
+----
+**control-shift-t: restore webpages in browser**
+
+Images: make sure it is in the same file as markdown file. ![img](img/image.jpg) have to end in jpg. 
+
+Citations go to website to change citation styles. Pandoc doesnt make a separate page for bibliography. Getting them to work was the toughest part. Can use pandoc to change style. How? 
+
+Open access research. SSHRC is requiring that research is available for several years. Publishing research notes, data sets, certain journals will publish these. 
+
+The environment, what did you have stuff installed, what machine did you use. Really have to explain what is going on, what files/programs are involved in the process. Make what you do transparent, talk to the world. "Hacking the 'Papers of You'" See this a curating yourself and your work. 
+
+Open notebooks, research notes for myself, write in a certain way because no one will read them. Would take notes in a very different way to write knowing others could read them. Research as performance would change it. Journal of Open Humanities Data. 
+electricarchaelogy.ca
+
+Methods of Digital Analysis: Examples from BC Stats: Martin Monkman. Provincial Statistician and Director, BC STats. bayesball.blogspot.ca. The pushback against the move forward of open notebooks, markdown etc can be found in all fields. In the golden age to take advantage of this new technology, markdown still being developed, not settled on and universalized yet. Good decisions start with good data. 
+
+The BC Public Service Work Environment Survey. Biennial census survey of the entire BC Public Service. "What one thing would you like your organization to focus on to improve your work environment?"  In 2006-2011 this coding was done manually, a team of coders read each comment and assigned it to an appropriate code. Labour intensive, time consuming, costly. 2013 use of SPSS Text Analytics. Themes and subthemes. 
+
+Edward R. Tufte: "Graphics are instruments for reasoning about quantitative information."
+
+Different graphs, different tools tell different parts of the story (BC elections)
+
+NY Public Library Digital images just released. With digital tools, there are a trail of records. BC email records. Set up a network diagram. The email logs contain and reveal personal information through the network diagram. 
+
+Google maps, in the municipalities have had to build new road because Google sends people down a logging road that doesn't exist. It's easier for them to build a road than to change google
