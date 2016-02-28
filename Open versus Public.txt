@@ -1,0 +1,52 @@
+# Open versus Public
+
+Open access research and notes quickly seems to be developing
+into an integral part of not just the field of history, but
+of the humanities in general. We have discussed in class how
+Open access research is becoming more and more expected. SSHRC,
+for example, is now requiring that research be available for
+several years. While this does not inherently require online
+publication, online and off of your own device is an easy way
+to protect from future computer problems and mayhem. There are
+also journals now that will publish research notes and things
+like data sets.
+
+This new world of posting the process behind the research is
+interesting because it has the ability to change the way in which
+we research and take notes, in that there is a constant awareness of
+an audience component that wasn't there before, at least in the same
+way. Although in the past there was an possibility that some day,
+after you died, that your notes may become part of the public record,
+through the archives for example, there was a stronger sense that these
+notes were for your eyes and yours alone. It fits in very well with
+the idea of the lone historian working for months in their ivory tower
+to produce the work that the rest of the world would get to see. There's
+an interesting article, "The Individual Research Archive: Hacking the “Papers
+of You" that discusses this shift into from the lone historian, hoarding
+their notes, to this public access to the process. The article argues, in
+part, for the idea of curating your own notes; changing the process of
+just for you to almost a performance of your notes and research process
+that is shown to the world.
+
+This almost raising of the curtain, is not out of step with a lot of
+other discussions taking place, particularly in the field of Public
+History. There's this idea that history needs to become more transparent,
+more collaborative, and more public friendly, otherwise... what is the
+point. However, similarly to discussions of public history more generally,
+open access is dealing with its own discussions of the ideal versus the
+reality. Lindsay Thomas, a PhD candidate in English at UC-Santa Barbara, for
+example, wrote an interesting post regarding the development of open access
+in the humanities. One of the points that she brings up is this idea that
+there is a significant difference between openness and publicness. To put
+your research notes on a platform like GitHub, for example, is great and
+makes them open, but the people who will be able to find and see these notes
+is limited to those who know and use tools like GitHub, which is far from
+everyone even in the field of history, let alone outside of the field.
+
+I doubt that these problems are going to be answered anytime soon. Like
+many ideals in historical practices, small incremental steps may lead us
+towards it, however actually reaching it will take much longer than we
+would expect. In the mean time, this process of open access will
+undoubtedly change the way we take notes, and will impact and influence
+those who see them, but there will still be this gap between the small
+group this access refers to in a practical sense.   
