@@ -1,0 +1,44 @@
+Programming Historian Introduction to the Bash Command Line
+
+Before the GUI in the 1980s, the main way to interact with your computer was through the command-line interface. Allows for more precision in your work.
+
+Tutorial provides a basic introduction to the bash terminal. Windows users need to install a shell like Git Bash. Uses a Unix shell. Need to download most recent "Full installer" from the msysgit featured downloads list. Instructions available at Open Hatch. Installed Git-1.9.5-preview20150319.exe Accepted all defaults, although added the desktop icon option. Clicked on "run as adminstrator" when I opened Git Bash.
+
+If you are unsure of where you are in a computer's file system, the first step is to find out what directory you are in. can find out through the "pwd" command. Said "/c/users/kelly. To check what files are in directory, use "ls" command.  If you want more information than just a list, can specify various flags to go with our basic commands. To get a list of outputs or manipulations, OS X/Linus users can turn to built-in help program by typing "man ls" WHAT ABOUT WINDOWS? Windows users can use the "help" command, though it has fewer features than "man". Type "help pwd" for an example of the command's output. 
+
+The "*" command is a wildcard, it stands in for "anything". So "ls *.txt" means "list of anything.txt"
+
+To go somewhere else. "cd" or "Change Directory". To go to desktop, type "cd desktop" To double check, use "pwd". "cd .." to go back one directory. "cd --" to go back to home directory. "explorer ." will open up the GUI at the current directory.
+
+INTERACTING WITH FILES
+You can also interact with files on the command line. Read them, open them, run them, edit them. It can eventually become a sole writing environment. It can often be quicker to make small edits without switching into a separate program. 
+
+Create a new directory so you can engage with text files. Will create it on the desktop. "mkdir ProgHist-Text" check to see if it worked with "cd ProgHist-Text". Go back to directory (cd ..) and type "cd Prog" and hit tab. Will complete the line. Tab = auto-complete, is case sensitive.
+
+Use "wget http://www.gutenberg.org/cache/epub/2600/pg2600.txt" to put a file in the ProgHist-Text directory. To read it type "explorer pg2600.txt" or to do so while staying in the command line type "cat pg2600.txt" To look at just the first or last bit of the file type "head pg2600.txt" (provides first 10 lines) or "tail pg2600.txt" (last 10 lines).  To change number of lines "head -20 pg2600.txt" (first 20 lines). 
+
+To change file name "mv pg2600.txt tolstoy.txt". To copy "cp pg2600.txt tolstoy.txt"
+
+Use up arrow to cycle through previous commands. The down arrow cycles back to the most recent command. 
+
+To combine multiple files, use the "cat" command. First duplicate Tolstoy file. Then "cat tolstoy.txt tolstoy2.txt" Use "ctrl + c" to stop a command. You can send output to a a new file with ">" command. Type "cat tolstoy.txt tolstoy2.txt > tolstoy-twice.txt" Creates a third file that house both files. To combine multiple files without writing out each name, use a wildcard. Type "cat *.txt > everything-together.txt"
+
+EDITING TEXT FILES DIRECTLY 
+Vim allows you to read file in its entirety without leaving the command line. It is included with bash. Type "vim tolstoy.txt" Can use arrow keys to navigate. "shift +UpArrow" will move you back a page. "shift + DownArrow" will move you forward a page.  
+
+Add a Reader field to the heading. move cursor to in between Author and Translators. press letter "a" and you will see "insert" at bottom of the screen. Allows you to type and edit as if you are in a standard text editor. Press "esc" to return to reading mode
+
+To leave vim and save changes, first press ":" to got to command input line of vim.  type "w" to write the file. you will see "“tolstoy.txt” [dos] 65009L, 3291681C written" Type "q" to quit vim. Could combine the two "wq" to write then quit. to leave without saving "q!" would quit vim and overide the default to save changes.
+
+MOVING COPYING DELETING FILES
+To move files, always make a backup files first. "cp tolstoy.txt tolstoy-backup.txt" Go up to desktop "cd .." and make directory "mkdir proghist-dest"
+You can use cp [source][destination] from anywhere in the shell. Type "cp /c/users/kelly/proghist-text/tolstoy.txt /c/users/kelly/proghist-dest/
+
+Can use * to copy all of the files to different location. 
+
+To delete the command is "rm" BE CAREFUL THAT YOU DON'T DELETE SOMETHING BY MISTAKE. Go to proghist-text and delete the tolstoy.txt file "rm tolstoy.txt" To delete the entire directory, go to desktop and "rm -r proghist-text" or if it is EMPTY directory use "rmdir" instead of mkdir. 
+
+OTHER COMMANDS
+"du" finds out how much memory is being used (du -h makes it human readable)
+"mem" provides overview of what processes are running
+"touch filename" creates a basic file. REFERENCE GUIDE AT END OF LESSON

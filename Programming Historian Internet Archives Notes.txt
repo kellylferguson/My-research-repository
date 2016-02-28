@@ -1,0 +1,19 @@
+Programming Historian Internet Archives Notes
+
+I already had python downloaded as part of working through stuff with Rob, Sara, Sara and Brad at the beginning of the semester. 
+
+I opened up the programming history tutorial about using pip. I opted to use the command line to install pip.
+
+After it originally didn't work, I went back to Emily's help posts from the other day to see what her issue was and if it was the same, learned that there was a problem with the programming historian guide, clicked on Shawn's link and downloaded it through the command line. It suggested to upgrade the git-pip file, so I did that as well. I also followed the help guide in writing "python -m" instead of "sudo" and the internetarchive and pymarc installed properly as far as  I can tell.
+
+The internet archive is contains digital collections of various types of files and sources that are useful to historians. In this tutorial, using anti-slavery collection. Contains letters of William Lloyd Garrison, as well as letters by and to others connected to him. 16,000 onsite at the Boston Public Library, 7,000 on the internet archive. Can read the original manuscripts, as well as download files related to the letter. 
+
+Having some confusion over what specifically the tutorial is asking me to do with searching internet archive through the command line. Got to the part of the help conversation where Shawn mentions that mining the internet archive is going through the steps of a program and that the command we need is at the end. 
+
+The tutorial should be more clear about going through the steps and that the combination is at the end, not very user friendly for the less experienced. 
+
+So, this program will let us search through the anti-slavery collection. We are going to import internetarchive, make it so we can search the collection, access specific items, download items based on a certain identifier, download the specific MARC XML record for a particular item, put in exceptions, and a time delay (time.sleep(1)) to prevent the servers from freaking out. 
+
+Following the advice that sara hollett received, trying to enter the script.  Used atom as my text editor. It started downloading all of the files, so once I checked to make sure it was working I stopped, because ALL OF THE FILES. 
+
+The whole thing was like a math class when you derive a formula. Shows the work of how we get there, but at the end you get the formula that you actually use. Use the script to dowload the files, download the marc records. 

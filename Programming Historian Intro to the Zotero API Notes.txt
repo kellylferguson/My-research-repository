@@ -1,0 +1,44 @@
+Programming Historian Intro to the Zotero API Notes
+
+Goal: to use python with the Zotero API to interact with your Zotero library. Zotero is a browser based research tool that allows you to collect and store content.  Installing libZotero allows you to  interact with the Zotero API. If you want to use your own group or individual library, need to retrieve your group or user ID and your own API key. *if using own individual library, replace 'group' with 'user' and use own user ID and API key. Can pull info from various levels of items from our collection. Can print basic info about items. Retrieve item type, key and item title.Can pull the bibliographic information associated with our first five items. Once we have worked through retrieving information using the Zotero API, we can continue to use it to interact with the items stored in our library.
+
+So first you did was install libZotero. To do that you get type "cd C:\python27\" . 
+Then I typed "python -m install libZotero" . 
+Typed "python" to get into python interpreter. 
+Got the >>> sign. 
+Then I copied and pasted "from libZotero import zotero". 
+Got >>> again. 
+Then copy and pasted "zlib=zotero.Library('group','155975','<null>',
+'9GLmvmZ1K1qGAz9QWcdlyf6L') "
+ and got >>> again. 
+ Then imput "items = zlib.fetchItemsTop({'limit': 5, 'content': 'json,bib,coins'})" and 
+ got >>>. 
+ Copy and pasted "for item in items:" and hit enter. 
+ Got ... 
+ and then you add 4 spaces and copy and pasted "print 'Item Type: %s | Key: %s | Title: %s' % (item.itemType,
+item.itemKey, item.title)"
+Got tables that started "Item Type: document" (check screenshot)
+
+Had to restart.
+
+Started at C:\users\kelly. Typed "python -m pip install win_unicode_console."
+Than "python" to enter interpreter
+"Import win_unicode_console"
+"win_unicode_console.enable()"
+Then I copied and pasted "from libZotero import zotero". 
+Got >>> again. 
+Then copy and pasted "zlib=zotero.Library('group','155975','<null>',
+'9GLmvmZ1K1qGAz9QWcdlyf6L') "
+ and got >>> again. 
+ Then imput "items = zlib.fetchItemsTop({'limit': 5, 'content': 'json,bib,coins'})" and 
+ got >>>. 
+ Copy and pasted "for item in items:" and hit enter. 
+ Got ... 
+ and then you add 4 spaces and copy and pasted "print 'Item Type: %s | Key: %s | Title: %s' % (item.itemType,
+item.itemKey, item.title)" Press Enter twice
+Got tables that started "Item Type: document" (check screenshot)
+Copy and paste "for item in items:" pressed enter
+Add 4 spaces and copy and paste "print item.bibContent"
+Crazy stuff happens but it worked (screenshot)
+
+

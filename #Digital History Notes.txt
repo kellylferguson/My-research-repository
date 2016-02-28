@@ -1,5 +1,7 @@
 #Digital History Notes
-January 11, 2016
+
+##January 11, 2016
+
 The problem with online databases. They are created and curated by humans, not objective. Problematic. 
 
 Git and github. Git takes pictures of changes to file, github allows you to share with others
@@ -35,7 +37,8 @@ Avoid mkdocs on windows 10
 
 Make notes on how you get to each point in case something breaks. 
 
-January 18
+##January 18
+
 Keep notes in a open notebook keeping track of what you do. Add, commit, push to github. Add and commit two parts of same action. 
 
 Step 1 and step 2.  Add to it, and then commit a snapshot. Keep in a repository, commit to desktop tracking folder
@@ -54,7 +57,8 @@ Next week do tutorial, tie it to our research, where are you coming from in term
 
 itch.io allows you to monetize your twine
  
-January 25
+##January 25
+
 Github twine-wrapper. Twine as a platform for interactive experiences. Designed for mac, not windows. Will take game created and turn it into a desktop app. Windows are on their own to figure it out. Also web2executable, does the same thing. At the end you have a formal program. Good for cv, more impressive than just making a website. 
 
 github/tmberton research notebook- pandoc tutorial
@@ -91,3 +95,99 @@ Different graphs, different tools tell different parts of the story (BC election
 NY Public Library Digital images just released. With digital tools, there are a trail of records. BC email records. Set up a network diagram. The email logs contain and reveal personal information through the network diagram. 
 
 Google maps, in the municipalities have had to build new road because Google sends people down a logging road that doesn't exist. It's easier for them to build a road than to change google
+
+##February 1
+
+Part of assessment is to be reflective in a public sphere. Either a wordpress blog or notes on github. In github account there is a special repository you can create. Call it your username.github.io everything in there, github will put in on interwebs as an actual website. Go to guthub jekyll now, fork it. Can just use a wordpress. What should the reflection cover? Be reflective. Think about experiences, feelings about it but then someone said something which ties into another class etc. Pymarc is a package, someone made it because people needed it. A lot of scholarly labour in that. Craft your notes into a narrative. 
+
+hypothes.is a plugin that lives in chrome, allows you to annotate to the page, a public annotation. Can use with the programing historian. 
+
+Wget. A free piece of software to download content from the web. Part of free software movement Came across the mission statement of wget. "to preserve, protect and promote the freedom to use, study, copy, modify, and redistribute computer software, and to defend the rights of Free Software users." Code as political philosophy. 
+
+Problems with powershell, get GIT BASH. Equivalent to a mac terminal. Command prompt is in DOS, GIT BASH is in Unix. Emily also downloaded the zip file by mistake as well. Need to run as administrator, paternalism from the 1970s. Can set it up to get files of a particular type. Can't use on databases. Works on sensible, concise urls. Emily used it on LAC files, made a txt file to tell it what to do.
+
+Entered (in the location of the text file):
+wget -i name.txt
+
+Save as text file (file name: e167.txt):
+http://data2.archives.ca/e/e167/e004157817.jpg
+
+http://data2.archives.ca/e/e167/e004157818.jpg
+
+Insert command:
+wget -i e167.txt
+
+To include time limits, add at the end. Good internet citizens need to do this, otherwise can be black listed.
+
+webarchives.ca 
+
+Internet Archive. Sara didn't finish it. Programming Historian tutorial doesn't make it clear that it is formatted for windows. sudo = mac. How to solve problems. Tutorial assumed a lot of extra knowledge. Language/assumptions. who's in/who's out. Maybe have a glossary. Use hyphothes.is to suggest these things. Second version of programming historian, first was in a sequence. Some of the lessons are getting creaky, because they were written a while a go. Type python, get to interpreter, shown by >>> rather than >. everytime you go into the interpreter, it's just vanilla python, when you want to use extra packages, need to tell it to import (i.e. import internetarchive). Write a program intsead. In text editor. To run it, at the prompt, say "python file.py".  Indents matter. Use either tab bar or space bar, not both. 
+
+Other databases may be more complicated. Getting the identifier, can just copy it into text file to use in wget. Rest of lesson is to get metadata marc. Can you open it through a certain pathway to have the files in a certain folder? marc.xml a pattern for describing metadata in a standard way across institutions. Carleton does not use marc.xml, metadata is useless, only has date digitized. 
+
+pymarc lets you extract the exact info you want. Saves from reading each file individually. Not strictly necessary to actually be able to do this at this point in digital history. Makes more sense when you have a research question that you want to answer and want to use this program, skill to do this. 
+
+Remember that the tutorial is assuming a computer that is already perfectly set up and configured in a particular way. Having issues and errors because we are pushing our computers and ourselves past what we know and what we do. SHowing your script allow people to see the strength of your data. This idea that your data may not be the best because your script missed some stuff. 
+
+Read ryancordell.org "'Q i-jtb the Raven': Taking the Dirty OCR Seriously" Certain programs come out of a particular type of political milieu. Easy digitization means history influenced by metropolis focus (Globe and Mail and Toronto Star). Metadata tells you about what is embedded in pdf. 
+
+To make a command code in markdown or on slack. use `write command and close it `. Use create a snippet on slack to write long code.
+
+Stack overflow, community of help. Go for help with problems.
+
+Anaconda: a development of python that comes with a whole bunch of extra programs. A someday, not today type of file. 
+
+Before you do SPARQL, go to workbook.craftingdigitalhistory. Read exercises module 2, and How do we find data? blurb. Don't do the exercises themselves.   
+
+##February 8
+
+Digital History annotating the programming historians tutorials Feb 8-12 using hypothes.is. Already have an accumulated body of knowledge about the gotchas and whatnot as we have gone through the tutorials. #DHannotates. Amanda Visconti. literaturegeek.com
+
+APIs and Zotero. Three tutorials. If you have it on the computer, could use your own personal library to find the metadata, the third one because Sara's own personal library didn't have any html files to use. Found using your own info not that useful, unless you have a lot of sources and you are interested in the metadata. 
+
+Whole point of API is so you can interact with database without going through their website, can set up an automatic database to search. We are doing a lot of theoretical stuff, so the point of Zotero specifically may not be useful, but the skill of going into someone else's database and put a wrapper around it. API does the highlevel plumbing.  Can use it to keep track of what you have been finding at LAC. Digital Library of America have an API. 
+
+Sara saw connections with open access, github for sources. Formats for you. Used stackoverflow to put screenshot pictures online in github. Could put them in same folder of github and make image name the link. Used the Zotero standalone, made an account online, synced account.  LOOK AT SARA's GITHUB. github.com/sarahollett/Reflections/blob/master/IntrototheZoteroAPI.md Something has been changed in Zotero that hasn't been updated yet, couldn't create a new item. 
+
+In Digital history, either commit to keeping it updated for forever, or you have a statement that says "this worked in this context, as of this date." Need a sunset clause in work. Shouldn't feel bad when something doesn't work, learn more in that case, figured out an issue in their tutorial. 
+
+Third tutorial, need to look over like ten different tutorials before actually doing that tutorial. Could ignore and not do. 
+
+What assumptions are being made, both in digital history and in normal history. What assumptions do you have about your audience. Writing tutorials are extremely hard, not appreciated as being harder. 
+
+Unicode issue. First tutorial, the error that all windows machine received. Found unicode command from stackoverflow and plugged it in. Idea of different fonts. Word square boxes instead of text. The font was not compatible with word. When on command line on windows, very restricted kind of fonts, Apple and Linus machines are using a very specific character language. Error messages are coming from an era when computers have less memory, very cryptic error messages. Always Google the error message. 
+
+Most major libraries, archives, museums do have APIs, but not all websites have them. serendip-o-matic.com Most interesting about API is to build a larger tool. LAC does not have an API. SHould have data exposed with API as a good internet citizen, otherwise what is the point. opencontent.org to publish peer-reviewed data. 
+
+SPARQL It was really good at explaining what it was, and what to do. Used visualization. What was SPARQL trying to do. URI's and literals it became confusing. URIs translate it into something that the webpage can read. URL takes you to a webpage, URI takes you to a concept. YAY terms to review were there. 
+
+URIs and Literals. URIs are the links that connect things, whereas literals is the english language statement of the connection. A way of organizing data so people can access it. Not a lot of people are using it yet. With SPARQL you can link databases together to make it more streamlined. 
+
+Problems. You have to know what you are looking for before you go looking for it. Point is looking at the connections between the things you want. Looking at context and relationships. Really wanted to use it as a language and a way of doing things. Talking about what you were doing, but allowed you to just click through it, Phoebe experimented with it. Took screenshot about useful prefixes. Struggled to figure out how to run her own queries. Go to website to look at specific informations, to know what to put after the prefix. In terms of search language, did they understand it? 
+
+hypothes.is anybody who has already presented a tutorial, get a hypothe.is account, figure out how to use it. Go to your tutorial and mark it up to put in the gotchas and issues so others don't have to suffer. Can do it to ones that people struggled with, even if it wasn't your week. 
+
+##February 22
+
+Found a way to make a visualization of SPARQL automatically. In slack if interested. This week would have been quite useful to have done this week's lessons at the beginning of the semester.
+
+Bash Command Line and Counting and Mining with Unix. learned a lot about git bash prior to this week. A lot was old news. What is the utility of the command line? Why would you use it? Elise talked about it in practice blog, Easy to combine files into a larger file. You can get more precision. Ian Milligan, seamless experience. The command line will immediately output what you're doing, including errors, good to track your error logs. What about reproducibility? The need to write down all the steps when helping a family member do something with computers. Command line advantage, the commands work regardless of edition of windows. Would be useful to look at preserving your research material, to learn to structure your files to be intuitive. Helps with future proofing your stuff and being able to find stuff again. So easy to be messy with computer folders. 
+
+tagspaces.org a markdown editor but will also tag all of the files so you can find stuff again. Emily had to set up a tag system for parks canada nunavut.  
+
+Stephen Ramsay, Life on the Command Line. 
+
+How do you see the command line as intergral to other tutorials/work? Found the counting useful, gets rid of a lot of the labour that goes into history work. With command line can set up a workflow that works for you. Efficiency. Does digital history change your perspective in a specific and significant way, or is it just efficiency? Offers accountability? 
+
+Voyant-tools.org way to visualize text data. You can have it downloaded to run on your machine so that you never lose your stuff. Can make a word cloud. Can ignore the simple words (the, and, of, to) by clicking on cogwheel. github/elisebigley has a tutorial from a different class for voyant. Super useful program to read, analyse the sources. 
+
+Open Jesuit zip file. Unzip onto computer. Now have all of this data on my computer. 
+
+Regular Expressions. Regular expressions are a sequence of characters that define a search pattern for use in find and replace operations. Different on whichever text editor you use. Figure out the syntax of the editor you are using. Be familiar with text. Got complicated really fast. Author didn't explain gotchas or the point of the tutorial. Didn't do a good job. RegExr was really useful, has a cheatsheet to help you figure out how to find stuff out. The tutorial in slack that Shawn wrote was easier to follow. REGEX and the Republic of Texas. 
+[0-9] {4} to find strings of four numbers (dates)
+
+Whatever tools that work best for you. REGEX is very much tailored to the specific project. Do things the ways that work the best for you. 
+
+If you are on command line to break up a big file into little files, use "split -p 'pattern' file.txt" Tells computer to split the file using the pattern you're looking for using regular expressions.  E: [0-9]{4}, R: ~DATE/1 So you would split by date by saying "split -p '~DATE' file.txt"
+
+For final project, should the Twines all be connected? Do them in a specific order to have them make the most sense. Or should they be separate. Think through how to make the project helpful through Twine, include the deadline, show the previous choices to explain why they reached a dead end and allow them to go back the necessary steps. Make it a story? Surprise and astound. Demonstrate that you have been awake and that these issues have made an impact. Could we maybe set it up so that a person could pick the type of project that they wanted to do, and follow the relevant tutorials with our help from a windows perspective? Connect the links so they can click and then follow along. Wants an unessay reflection. Can be an essay, a video, etc. Can collaborate if you want. 
