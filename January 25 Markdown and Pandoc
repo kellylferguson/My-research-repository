@@ -1,0 +1,43 @@
+# Present-Proofing and Future-Proofing Your Work
+
+This week's tutorials focused on markdown and Pandoc. Markdown,
+we saw last week, is a really stripped down way to write and
+format documents. These plain text files are extremely useful in
+that they allow you to move them easily across different devices
+as well as convert them easily into different program formats.
+Besides allowing "present-you" to easily format the same file into
+and HTML file or a Word file, markdown and plain text files allow
+"future-you" to not pull their hair out by trying to get a 2010
+Word document to open up on a computer that runs 2020 programs that
+may not even include Word anymore. Pandoc, on the other hand, is
+a command line tool that allows you to take your plain text
+documents and convert them into formatted files (PDF, Word, HTML etc.).
+
+It was easy to see the value in this week's tutorials. I remember
+several times in undergrad, as well as even highschool, that I had
+to mess with the format in order to take documents that I had written
+in Word on my own computer, and get them to open so I could print them
+on my school's computer. Even living in the same time period, using the
+same time of machine (pc) slightly different versions of Word became
+a headache I would have to deal with. Now that I am becoming more and more
+comfortable with markdown, it seems more and more like the logical choice,
+rather than writing in Word from the start. There was also a bonus tool this
+week: Zotero. Learning about a program like Zotero, which is a web extension
+that automatically saves and formats citation information in your chosen style,
+has made this class worth it. If for some reason I don't manage to retain
+any other lessons from this class, Zotero has made it worth it.
+
+Zotero aside, this week's tutorials have really help to instill a sense
+of preparing for the unexpected. Writing in markdown allows me to not
+worry about the future formatting issues of Word and Pandoc makes
+the present formatting from plain text to whatever I need less of a
+headache. Even Zotero is there to help prevent me from eventually having
+to go back and finding a source that I forgot to get a piece of bibliographic
+information. It's also made me think more broadly about protecting myself
+from computer-related disaster. Everything I write is now backed up repeatedly
+on multiple formats. For example, find my notes for this course, as well as drafts
+of these posts here on github. Hopefully, as this class progresses, these
+lessons of present-proofing and future-proofing will not be left behind. It
+would be nice if, for once, I was pleasantly surprised by my pass-self's
+computer and formatting habits, rather than dealing with past headaches
+and frustrations. 
