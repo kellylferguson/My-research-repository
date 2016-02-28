@@ -35,9 +35,9 @@ headache. Even Zotero is there to help prevent me from eventually having
 to go back and finding a source that I forgot to get a piece of bibliographic
 information. It's also made me think more broadly about protecting myself
 from computer-related disaster. Everything I write is now backed up repeatedly
-on multiple formats. For example, find my notes for this course, as well as drafts
-of these posts here on github. Hopefully, as this class progresses, these
+on multiple formats. For example, find my notes for this course, as well as
+drafts of these posts here on github. Hopefully, as this class progresses, these
 lessons of present-proofing and future-proofing will not be left behind. It
 would be nice if, for once, I was pleasantly surprised by my pass-self's
 computer and formatting habits, rather than dealing with past headaches
-and frustrations. 
+and frustrations.
