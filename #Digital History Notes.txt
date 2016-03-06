@@ -191,3 +191,40 @@ Whatever tools that work best for you. REGEX is very much tailored to the specif
 If you are on command line to break up a big file into little files, use "split -p 'pattern' file.txt" Tells computer to split the file using the pattern you're looking for using regular expressions.  E: [0-9]{4}, R: ~DATE/1 So you would split by date by saying "split -p '~DATE' file.txt"
 
 For final project, should the Twines all be connected? Do them in a specific order to have them make the most sense. Or should they be separate. Think through how to make the project helpful through Twine, include the deadline, show the previous choices to explain why they reached a dead end and allow them to go back the necessary steps. Make it a story? Surprise and astound. Demonstrate that you have been awake and that these issues have made an impact. Could we maybe set it up so that a person could pick the type of project that they wanted to do, and follow the relevant tutorials with our help from a windows perspective? Connect the links so they can click and then follow along. Wants an unessay reflection. Can be an essay, a video, etc. Can collaborate if you want. 
+
+February 29
+
+Realized that the OCR lesson sucked. google ocr tesseract. Had a really good tutorial by Ben Schmidt for Mac users. Go to tesseract-ocr at github. Not mission critical. Is installed on computers in the resource room. Would use it through the command line. diybookscanner.org teach you how to build your own scanner (like physical scanner) with the needed software. Raspberry pi, a little tiny computer (30 buck) can even sign them out at the library. rdmilligan.wordpress.com ocr on raspberry pi. 
+
+OpenRefine. Did it seem valuable? Last year, Laural worked on a project that involved scrapping a bunch of data. needed to see how many times certain names show up. Needed to clean up any alternate spellings, anything that didn't come out properly in the scrapping. OpenRefine really helped with that. Tutorial showed different ways to clean it up. Numeric stuff was new for her. Found GREL a little confusing but when it was broken down it makes sense. GREL is a specific language that Google uses in house. Clustering and collapsing of data, especially with messy scans is super helpful. 
+	
+	I found it really useful in that you could quickly get rid of different spellings or issues in the categories and keywords, and then see the categories and how many files fell under a specific category. 
+
+OpenRefine scatterplots. Can make them with OpenRefine. Why not just you Excel? OpenRefine is designed to deal with a large amount of textual, numeric, mixed data. Does the spelling stuff for you. Excel can only really deal with numeric. You could cluster not just for spelling issue, can combine terms that made the sense as being the same in your own research. Still need to use your historical sense. Doesn't replace the imput data until you export it (and you can keep it that you can see original by changing the file name in the export version). 
+
+Would need to regex your own text files to turn it into a table form before OpenRefining. 
+
+Didn't really explain what each method specifically did in the clustering tool. They are various statistical tools for clustering things. Different algorithm that have different views of how the world works. 
+
+Can use regex in OpenRefine, but it helps if they are at least in rows first. If you had a bunch of letters, if you had the metadata on the letters, might be more useful to use OpenRefine. If you have them one letter per row, you may be able to use it for text mining. What if you wanted to created the metadata? Would you use this? Or topic modelling? How do you create metadata for things? When they are scanned, is the metadata manually put it in? Usually. A regular expression might be the way to go to take the date info, for example, take it out and use ||| or something to turn it into a spreadsheet. 
+
+Generating an Order Data Set from an OCR Text File. The tutorial was recommended for advance users. Basically, the tutorial is less lets do this, lets do that. It's trying to show the intersection between python and OCR data files. Way to take metadata and use it in a way that python can understand. Unless you get a job as a developer, this tutorial is kind of useless. Meant to give use Cleaning OCR text with Regular Expressions tutorial by O'Hara. http://programminghistorian.org/lessons/cleaning-ocrd-text-with-regular-expressions.html Works it out as a python script, instead of working out a regex each time. Good to build little lego blocks, instead of having to reinvent the wheel each time.  Don't use "sed" or "grep" really easy way to mess up 6 months worth of work. 
+
+Let's do this tutorial together. 
+
+Today if feels as though I have finally "drank the cool-aid" in terms of this class. I feel like I finally have enough basic information to not be horrified by the tutorials. 
+
+To copy and paste a table out of a pdf and have it work as a table. Use the program Tabula, tabula.technology. 
+
+If you are using Twine github.com/drumanagh/twine-wrapper will turn your twine into a desktop app. There will be a folder to put the twine game, type the command to turn it into an application, it will turn it into an app for a mac, a windows, a linux etc. Hasn't figured it out as a mobile app yet. Allows you can show a piece of software that you may. Handy in terms of archiving, websites die. Good in terms of issues with internet connectivity. Doesn't have to twine, any HTML, could use this with a website.  
+
+Writing how to write OCR, would be a good thing for us to do. 
+
+Phoebe found a tutorial for tesseract for macs. ryan.fb.github.io has lots of interesting code and whatnot on his site. Check it out. 
+
+github.com/karpathy/char-rnn. Uses multi-layered recurrent neural Networks. What google uses for autocorrect. Can take a bunch of archived songs, and then have it engineer its own song. Can use it for text files, other types of files. THIS SEEMS INSANELY AWESOME REMEMBER THIS. 
+
+sonification. programminghistorian.github.io/ph-submissions/lessons/sonification
+
+
+ 

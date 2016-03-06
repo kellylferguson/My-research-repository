@@ -1,0 +1,38 @@
+Getting Started with Topic Modeling and MALLET
+
+Will learn what topic modeling is and why you would want to use it in your research. Also will install and use the MALLET natural language processing toolkit.  MALLET involves modifying an environment variable  (making it so your computer knows where to find MALLET) and working with command line. 
+
+A topic modelling tool takes a single text and looks for patterns in the use of words. Ask yourself, is this useful for my project? A small amount of documents, probably not necessary, better for hundreds of documents. Topic models represent a family of computer programs that extract topics from texts. Many different topic modeling programs available, we are using MALLET. Useful to think of these categories as discourses.
+
+Installing MALLET. Uses a implementation of Gibbs sampling, a statistical techniques meant to quickly construct a sample distribution, to create its topic models. Will use MALLET 2.0.7. Downloaded mallet-2.0.7.zip Moved it to c:\drive and renamed it "mallet". extracted the files. Installed Java developer's kit (dowloaded jdk-8u73-windows-x64.exe)
+
+Need to create a environment variable so that the computer knows where to find all the various components of its processes when it is running.  Like a shortcut. Go to Start Menu - Control Panel - System - Advance Systems Settings. Click new and type MALLET_HOME in the variable name box. Than type the exact path of the unzipped MALLET c:\mallet
+
+Running MALLET using the Command Line. Use cd .. to move up to the c:\ directory. Type cd mallet. When in the MALLET directory, you have to tell the computer that you want to run a MALLET command, you do this by telling the computer to grabs its instructions from the MALLET bin. Type "bin\mallet". DIDNT WORK. Try restarting the computer, still nothing. Didn't have it extracted properly, had mallet folder inside of a mallet folder. Fixed it (removed a layer) and tried again. It worked this time. 
+
+Typing in MALLET Commands. There are 9 MALLET commands that you can use (all shown in command line when you typed "bin\mallet").  Sometimes you can combine commands. Try typing "bin\mallet import-dir --help" (need to include bin\mallet everytime to tell computer where to look). Shows list of all potential parameters you can set for this tool. Note that there is a difference between - and -- in MALLET. - is part of a name, replaces a space. --modifies, as a sub-command or specifies a parameter. 
+
+Working with Data. MALLET comes with pre-packaged with sample .txt files. Type dir at the c;\mallet level, one of the directories is called sample-data. cd sample-data type dir again and see the .txt files. You can look inside them by typing the full name of the file. YOU CANNOT RUN MALLET COMMANDS FROM THIS DIRECTORY. NEED TO BE IN THE MAIN.
+
+Importing Data. In the sample data directory, will see a bunch of .txt files. Each are a single document. The entire folder can be considered a corpus of data. To work with corpus we need to transform them from several individual files, to a single MALLET format file. MALLET can import more than one file at a time. Can import entire directory using "import" command. Get back to c:\mallet and Type "bin\mallet import-dir --input pathway\to\the\directory\with\the\files --output tutorial.mallet --keep-sequence --remove-stopwords" (the pathway for this will be c:\mallet\sample-data). Command worked. Now in dir we have a file called "tutorial.mallet". 
+
+Issues with Big Data. If you're working with extremely large file collections, you may run into issues with your heap space (computer's working memory). Will arise during import sequence. If you run over limit your will receive the error message "Exception in thread "main" java.lang.OutOfMemoryError: Java heap space". Can increase the value of memory by finding the line "MEMORY=1g" and changing the value upwards - to 2g, 4g etc (whatever your system's RAM allows). 
+
+Your First Topic Model. At the MALLET directory, type "bin\mallet train-topics --input tutorial.mallet" This opens up the tutorial.mallet file an runs the topic mode routine using default settings. Tries ot find the best division of words into topics, can scroll through to see what it was outputting.
+
+Go back to the MALLET directory, type dir. No output file, we didn't save. Type the command "bin\mallet train-topics  --input tutorial.mallet --num-topics 20 --output-state topic-state.gz --output-topic-keys tutorial_keys.txt --output-doc-topics tutorial_compostion.txt". 
+This command told it to
+-create a topic model (train-topics)
+-Open tutorial.mallet file (--input tutorial.mallet)
+-Find 20 topics (--num-topics 20)
+-Output every word in your corpus of materials and the topic it belongs to into a compressed ".gz" file (--output-state topic-state.gz)
+-output a text document showing top key words (--output-topic-keys tutorial_keys.txt)
+-output a text file indicating the breakdown of each topic within each original file by percentage (--output-docs-topics tutorial_composition.txt)
+
+Type dir list shows the .gz file and both .txt files. Open tutorial_keys.txt in a word processor. If when you ran the topic model routine you had included --optimize-interval 20 (bin\mallet train-topics  --input tutorial.mallet  --num-topics 20 --optimize-interval 20 --output-state topic-state.gz  --output-topic-keys tutorial_keys.txt --output-doc-topics tutorial_composition.txt), Would make the output give the first number as the number of the topic (topic 0, topic 1 etc) and the second number gives an indication of the weight of that topic. Generally including --optimize-interval leads to better topics.
+
+The Composition of your Documents. What topics compose your documents? Shown in tutorial_composition.txt. Import txt file into a spreadsheet. I tried using pandoc to change the file format to see what would happen and to remind myself how to use pandoc.  Just type the command in the directory with the file (in this case tutorial_compostion.txt was in c:\mallet) and type "pandoc -o tutorial_compostion.csv tutorial_compostion.txt" That made it kind of gross looking because it didn't allow for the formatting of the information. Used excel's import from text function instead, worked better because it allowed extra formatting control. Has a spreadsheet with doc, source, topic, proportion columns, subsequent columns run topic, proportion, topic, proportion etc.  If your corpus was in chronological order, you could graph this output to see change over time. 
+
+Getting your own texts into MALLET. You want to put everything you wish to topic mode into a single folder within c:\mallet. Files should be in .txt format. Do you want it to explore at paragraph level, make each paragraph a separate file. Do not leave spaces in file names, use underscores to represent spaces. There are ways to automate this process (http://electricarchaeology.ca/2012/07/09/mining-a-day-of-archaeology/).
+
+

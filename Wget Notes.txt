@@ -1,0 +1,25 @@
+Wget Notes
+
+The point is to be able to retrieve or mirror a website. Good for backing up your own website, or saving a website with important/history-related documents. 
+
+On the Command line. 
+
+Three different examples of ways to use it. NEED to be careful about using it. Consult manual, work through lessons. Should build in a delay to not overload the servers. CAN ACCIDENTALLY DOWNLOAD MORE THAN YOU WANT
+
+Ran through a the command line tutorial at the beginning for a refresher.
+
+So I downloaded wget (version 1.16.3 32-bit) and moved the entire zip file into c: windows directory as directed. I followed the instructions to create a directory. I typed "mkdir wget-activehistory" into powershell. Than "cd wget-activehistory".  Then "wget http://activehistory.ca/papers/"  . The folder wget-activehistory is empty at this point, which I feel may mean there is a problem. We shall see if anything happens by the end. 
+
+Some commands to know: "-r" means recursive retrieval. Wget will follow links from the website. By default, sends wget to a depth of five sites.  "--no-parent" This is important. Means wget should follow links, but not beyond the last parent directory. If you want to go outside of directory, best to be specific about how far you want to go. Can input "-l 2" which takes us to the depth of two webpages. "-w 10" adds a ten second waint between server requests. Can shorten to 2 seconds if you want. "--limit-rate=20k" limit the maximum download speed to 20kb/s.
+
+Time to download all of activehistory.ca/papers/. It didn't work. Powershell has the red words that mean 'you did something wrong', not really sure what at this point. I tried in command prompt instead and it says that wget is not a thing. I may try to remove the program and start over.
+
+So I deleted the program in attempts to start over, but it doesn't see to be downloading properly. WOW figured out the problem, accidently clicking the zip file, not the download. 
+
+I retried the first section of "wget http://activehistory.ca/papers/ and it worked properly this time. 
+
+Retried downloading the entire activehistory.ca/papers/ as suggested and this was also successful. I've also switched to command prompt instead of powershell as everyone seems to see powershell as fussy and issue-ridden. 
+
+To mirror the whole website, use "-m". The whole command: "wget -m --limit-rate=20k http://activehistory.ca" I did not do that because I didn't want the whole thing on my computer and it would seem that if the /papers/ section worked, so would mirroring. I also stopped the /papers/ section after I checked to make sure it worked properly my checking for the files. 
+
+

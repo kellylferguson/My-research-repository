@@ -1,0 +1,13 @@
+Cleaning OCR'd text with Regular Expression
+
+Copy out the text that is provided as a text file. Saved as OCRtutorial.txt
+
+Regex. Regex is not a programming language, but follows a syntax in many different languages. Uses characters to find or replace precise patterns in texts. 
+
+[A-Z] isolates all the capital letters. ^[A-Z] isolates the first capital letter. [^A-Z] isolates all characters but the capital letters. [A-Z]{3} isolates 
+
+Example python file. Copy and paste the python file but replace "ocr = open( ' .. / .. /data/txt/50-1-p1/txt') with (your saved text file)
+
+Never mind, gave the only output file, not the input file. The save txt file is output, won't get anything with the python script. Can't find where to find the input file. Go to HeinOnline, go to content, article directory, still can't find the file. Going to look at 1946: Framing 
+
+The point is that you now have a python script that you can adjust depending what we need with our knowledge of regular expressions.

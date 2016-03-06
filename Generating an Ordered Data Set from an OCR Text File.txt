@@ -1,0 +1,62 @@
+Generating an Ordered Data Set from an OCR Text File
+
+Tutorial will show us how to take metadata from an OCR file and turni it into an ordered data set (a python dictionary). Can be adapted to organize any scanned text, even if it doesn't look like the one in the example.
+
+Even the best OCR has super high error rates (#confederationdebateprobs #NBprobs). Little money to hire grad students to fix these problems by hand. Going through one at a time is extremely prone to errors, ways to automate this work. You can use Perl or Python to search OCR and correct them using a regular expression. Works for "regular" but what about "irregular" outputs. With ordered data sets, you can change a l to a 1 in the dates, without affecting l in lbs for example. With an ordered datea set, we can do proofreading, and potentially many other kinds of tasks, much more effectively. 
+
+Goal of the tutorial, take a plain text file and turn it into a python dictionary. Easier to use this form than the form of a plain text file. 
+
+Useful functions. Taking these from other people. Pretty sophisticated programming, it's ok if you do not completely understand, but try to. 
+
+Levenshtein distance. Need to untangle the parts of text that are charter-bound vs page-bound. Page headers and footers, useless page-bound data (only useful for physical books).  Want to preserve page numbers, but header isn't useful to us, will make things more difficult. Can't use a regular expression (irregular). Can use an algorithm to test each string for its likelyhood of it being a page header. 1965, Vladimir Levenshtein composed such an algorithm. The python function that will work for us (lev() takes two strings as parameters and returns a number that indicates the differences between them): 
+
+def lev(seq1, seq2):
+    """ Return Levenshtein distance metric
+    (ripped from http://pydoc.net/Python/Whoosh/2.3.2/whoosh.support.levenshtein/)
+     """
+    oneago = None
+    thisrow = range(1, len(seq2) + 1) + [0]
+    for x in xrange(len(seq1)):
+        twoago, oneago, thisrow = oneago, thisrow, [0] * len(seq2) + [x + 1]
+    
+        for y in xrange(len(seq2)):
+            delcost = oneago[y] + 1
+            addcost = thisrow[y - 1] + 1
+            subcost = oneago[y - 1] + (seq1[x] != seq2[y])
+            thisrow[y] = min(delcost, addcost, subcost)
+            # This block deals with transpositions
+            if (x > 0 and y > 0 and seq1[x] == seq2[y - 1]
+                and seq1[x-1] == seq2[y] and seq1[x] != seq2[y]):
+                thisrow[y] = min(thisrow[y], twoago[y - 2] + 1)
+    return thisrow[len(seq2) - 1]
+    
+Roman to Arabic numberals. To change the roman numerals to arabic in Python needs this algorithm:
+
+def rom2ar(rom):
+    """ From the Python tutor mailing list:
+    János Juhász janos.juhasz at VELUX.com
+    returns arabic equivalent of a Roman numeral """
+    roman_codec = {'M':1000, 'D':500, 'C':100, 'L':50, 'X':10, 'V':5, 'I':1}
+    roman = rom.upper()
+    roman = list(roman)
+    roman.reverse()
+    decimal = [roman_codec[ch] for ch in roman]
+    result = 0
+
+    while len(decimal):
+        act = decimal.pop()
+        if len(decimal) and act < max(decimal):
+            act = -act
+        result += act
+
+    return result
+    
+Some other things we'll need. Need to import some python modules. First is the regular expression module "import re" into the python interpreter. Then pprint, "import pprint." From collections import counter: first import collections, then "from collections import Counter". 
+
+Brief review of regular expressions as they are implemented in Python. re.compile() creates a regex object that has a number of methods, be familiar with .match() and .search(), but also .findall() and .finditer(). Difference between .match() and .search() - .match() will only match at the beginning of the line, and .search() will match anywhere in the line but then it stops (only shows first match). Return match objects, to get match strings, need mymatch.group(0). .findall() and .finditer() will return all occurrences of the matched string. .findall() returns them as a list of strings, but .finditer() returns as an iterator of match objects.
+
+Iterative processing of text files. Will iteratively (like iterations) generate new, corrected versions of our file by using it as input for our python scripts. Note: this code is not comprehensive, will need to write little ad hoc srpits to continue to fine input files and to check efficacy of what you've done so far. Versioning will make sure  we don't destroy progress. 
+
+Two ways to do this. 1. use all the code snippets in a single file and comment out the bits you don't want to run, or 2. each the subsections in section 2 can be treated as a separate script, each would then have to do its own import-ing and assignment of global variables. 
+
+So I got to this point and two things happened. The tutorial started getting super confusing and I wasn't really sure what it was saying. Also, it was decided to skip this tutorial (by Shawn) and well discuss OCR in class tomorrow, but we should try to install tesseract on our machines.

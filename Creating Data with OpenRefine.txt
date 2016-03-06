@@ -1,0 +1,39 @@
+Creating Data with OpenRefine
+
+The key message of the tutorial, don't take data at face value. Learn the practices and principles of data cleaning. Learn to remove duplicate records, Separate multiple values contained in the same field, analyse the distribution of values in a data set, group together different representations. 
+
+Why should we care? the more we share, the more we will need to deal with data quality. 
+
+What is OpenRefine? An IDT. The development of Interactive Data Transformation Tools (IDTs) allow for quick and inexpensive operations with large amounts of data. Similar to a spreadsheet, but spreadsheets work with individual rows and cells, while IDTs work with large ranges of data. OpenRefine seen as the most user-friendly IDT according to authors. OpenRefine extensions allow users to identify concepts in unstructured text (Named-entity recognition - according to wikipedia is "a subtask of information extraction that seeks to located and classify elements in text into pre-defined categories such as the names of persons, organizations, locations, expressions of times, quantities, monetary values, percentages, etc.).  Data cleaning is needed before you can do this, makes it coherent.
+
+The Powerhouse Museum in Sydney, has freely available metadata export of its collection on its website. One of largest science and tech museums in the world. File "phm-collection.tsv" can be downloaded and opened as a spreadsheet. We are going to use a copy of this data that has been archived by PH. Category fields, controlled vocabulary (keywords for describing content with a limited number of terms). 
+
+Installing OpenRefine. Downloaded 2.6 windows kit. Asked to install java so I did. JavaSetup8u73.exe. Downloaded, waiting to verify that it worked. OpenRefine opened. While it opened in my browser, data won't be stored online, runs locally. Downloaded phm-collection.tsv file
+
+In OpenRefine, create a new project using phm-collection.tsv file. It uploaded the data for me. Unselected "quotation marks are used to enclose celles containing column separators" because the quotes inside the file have no meaning in OpenRefine. Click "Create Project" got 75814 rows. Can click "persistent Link" to go to the museum's website and see what object each set of metadata corresponds to. 
+
+Get to know the data. Can inspect different data values by displaying them in "facets". For text facets need to limit the choice count or will get an error. Minimum is 2000, 5000 is a good number. Not getting any numeric facets, have to change the encoding (according to Shawn) because it is set to text. To do so, go to Record ID - edit cells - common transformations - to number. Then you can facet numeric.
+
+When looking at the facet numeric, you can see that three row are blank, go to the blank ones, go to all, click edit, click remove all matching rows, gets rid of the three blank rows. Now have 75811 rows.
+
+Removing Duplicates. choose a unique sorting icon (we can assume in this case the Record IDs will be unique). Go to sort, select numbers bullet. With OpenRefine, to make a reordering permanent need to choose reorder rows permanently. Identical rows are now adjacent to each other. Go to edit cells - blank down. Effects 84 cells. To remove them, create a facet on blank cells, got under record id - facet - customize facet - facet by blank. Click on True, remove with all triangle. Now 75727 rows.
+
+Atomization. Can now look more closely at Categories field. Each one on each object is separated by a "|". Need to split up the values in categories field to analyze the use of keywords.  which will expand 75727 rows into 170,167 rows. Go to edit cells - split multi-valued cells with "|" as the separator.  
+
+Need to understand the rows/record paradigm. Make Record ID column visible. Can switch between rows and records view. "Show as row record" 170,167 category assignments (rows) spread over 75736 collection items (records).  Why there are 9 more will be explained later (75727 vs 75736).
+
+Facetting and clustering. Once the content has been atomized, filters, facets and clusters can be used to give a quick overview of classic metadata issues.  By applying, customized facet - facet by blank, can see 461 records without a category. can apply a text facet to see the 4934 different categories used in the collection (raise choice count limit to 5000).
+
+After an application of a facet, OpenRefine propose to cluster facet choices together based on similarity methods. Click on cluster to solve issues regarding case inconsistencies, spelling mistakes etc. Proposes mergers of related values. Different options, some options for clustering are too strong, will cluster non same values. Click select all, and merge selected and close to submit changes. Now 4895 categories. Now they have been clustered individually, go to categories - edit cells -join multi-valued cells - ok. Rows look like before with multi-valued Categories field.
+
+Applying ad-hoc transformations through the use of regular expressions. The 9 records that appeared out of nowhere. Need to use undo/redo tab to find that moment in the history. Click on #5, remove 84 rows, and go back to the face/filter tab. The issue arose during the splitting operation, so there is a good chance that whatever went wrong is linked to the "|" that we used. Go to Categories - text filter, Type "|" into field on the left. 71064 matching records out of 75727. Enter a second "|" into the search bar thing. We got 9, it is likely that these are the 9 of our discrepancy, to fix go to Categories - edit cells - transform "Welcome to the custom text tranform interface, a powerful functionality of OpenRefine using the OpenRefine Expression Language (GREL)"
+
+Starts off with "value" = current value of each cell (shown below). Can modify this value with functions. In this case we want to replace || with | Can do this with the regular expression "value.replace('||', '|')". Did it, removed the 9 discrepancies. Now try to split the categories again and it should stay at 75,727 records.
+
+Can also use GREL to fix categories that are listed twice. Categories - edit cells - transform. Use "value.split('|').uniques().join('|')"
+
+Exporting your cleaned data. This whole time, the original data has been saved, untouched. To save the cleaned data, need to export them. Can use CSV, HTML, Excel etc.  I turned it into an HTML file.
+
+Building on top of cleaned data. After it is cleaned, can use the other features of OpenRefine. Different extensions available. You can transform plaintext keywords into URLs, apply named-entity recognition etc.
+
+All data is dirty, but you can do something about it. Know how to get a quick overview of a bunch of data, check for keyword frequency, see the keywords used, how many empty values etc. Also now can fix issues like duplicates and spelling problems to get a clearer sense of the data. Allows you to trace steps if you make a mistake. 

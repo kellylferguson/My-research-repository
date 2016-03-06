@@ -1,0 +1,45 @@
+Corpus Analysis with Antconc
+
+Corpus analysis is a form of text analysis which allows you to make comparision between textual objects on a large scale. Can find grammatical, recurring phrases patterns. Tutorial will teach you how to create/download a corpus of texts, conduct a keyword-in-context search, identify patterns surrounding a particular word, use more specific search queries, look at significant differences between corpora, make multi-modal comparisons using corpus linguistic methods. 
+
+Voyant (voyant tools is a web-based reading and analysis environment for digital texts) is a gateway into more sophisticated, replicable analysis. AntConc fills the void by being standalone software package, rather than the DIYness of python. 
+
+Note: corpus analysis is rarely a one-size-fits all affair. It's worth to think about what you are doing in each step and how it can help answer a specfic question about the data. The exact order of tutorial is not always necessary. An outline of methods, rather than an outline of some methods, rather than a recipe of success.
+
+Download version 3.2.4 in order to follow along with the screenshots of the tutorial. Downloaded AntConc.exe. Then download the corpus (movie reviews). 
+
+Working with Plain Text Files. AntConc works only with plain text files. Will not read .doc, .pdf etc. Will read XML files that are saved as .txt files. Went to New York Times website, got an opinion piece about gun regulations. Put into Atom. Cleaned up the extra ad type stuff. Removed the author and date. Cleaning files can take time on large scale, could use OpenRefine. Doing this process over and over again would be how you build a corpus of plain text files. Called "corpus construction". Can be kind of tedious. Common to use webscrapping (using a program to grab files from the web for you) to construct your Corpus (like Wget). Our corpus has 2000 movie reviews, organized by positive and negative, we are going to use a small subset of them 200 positive, 200 negative.
+
+Getting Started with AntConc: The AntConc user interface, loading corpora. The different tabs in AntConc: Concordance (shows you a Keyword in Context view), Concordance Plot (simple visualization of your KWIC), File View (shows a full file view for larger context of a result), Clusters (shows words which frequently appear together), Collocates (show words which are statistically likely to appear together), Word List (all words in the corpus), Keyword List (comparison between two corpora).  Will focus on Concordance, Collocates, Keywords, Word List.
+
+Loading Corpora. Go to File - Open Dir (need to open all the files, not just one). Opened directory, opened folder "movie reviews from nltk". Went into "negative review" and hit OK. Then did same thing with "positive reviews". Now have 400 files. 
+
+Searching Keywords in Context.  AntConc is very good at finding patterns in language. "I, he, she a, an, is, have, will" are called function words, or stopwords in digital history. In the search box, type "the" and click "start". The Concordance view will show every time the word "the" shows up in the movie reviews. Show "Key Words in Context." (KWIC). 14618 Concordance hits. The KWIC list is a good way to start looking for patterns (what kind of words appear near "the"?). Try search with "a" (definite article vs indefinite article). 7438 Concordance Hits. 
+
+Try "shot" (will show both the verb and the noun).  65 Concordance Hits. Press 'sort" button to get a easier view to see patterns and info in hits. Use the KWIC sort options at the bottom to change the parameters (L = left and R = right). How many words to the left should be highlighted, how many to the right. 
+
+The * operator (wildcard). The * can help find both the singular and plural of nouns. Example: search qualit* which will allow for both quality and qualities. SEEMS LIKE KNOWING WHAT KIND OF KEYWORDS SHOULD BE THERE, WANT TO FIND, WOULD BE HELPFUL. Can find other wildcards in Global Settings> Wildcard Settings. ? means just one character, * can be multiple characters (? = man, men, min ; * = man, men, min, mean, melon etc)
+
+Task: Compare the searches between wom?n and m?n. Sort each in a meaningful way (by changing search term then 1L then 2L). File > save output to text file and append with .txt. Save with a useful, descriptive filename. 
+
+M?n: Used Level 1: 2L, Level 2: 2R, Level 3: 1L. 370 Hits. Saved as m.n-results.txt (doesn't like ? character) Used These KWIC sorts because it seemed that it would be useful to highlight the way m?n was being described, and sometimes that was immediately before, or sometimes it was two words to the left. Also wanted to know what they connected with on the right without useless stopwords on the right. 
+
+Wom?n: 157 hits. Used the same KWIC sorts for the same reasons. Saved output as wom.n-results.txt
+
+Can now open these in a texteditor. Interesting differences in descriptors (beauty related versus strength/violence related) Both use young a lot as descriptors, wom?n have terms like beauty, pretty etc a lot. M?n have a greater variety of terms, no real standouts accept maybe "thinking". More action-y type words. 
+
+The | operator ("or")
+
+Search for she|he, then search for them each individually. she|he got 2302 hits. She got 586 hits. He got 1716 hits.
+
+Task: Practice searching a word of your choice, and sort in different ways, using wildcards and finally exporting. What kind of patterns? I chose the word Act*. I played around with the wildcards, and the sorting. act* 976 hits (gave things like action, actually, actor, actress, acting) act@ 62 hits (gave things like act one, act).  
+
+Collocates and word lists. Was just thinking how I wish I could see a list of words that appear most frequently in company with the keyword. Using act* still, with span set from 2L to 2R. You can remove the stopwords by using a stopwords list: a common step in topic modelling. Tutorial doesn't recommend this because addressing high-frequency words is where computers shine. 
+
+Task: generate collocates for m?n and wom?n. Sort them by frequency to 1L. Shows what makes women and men movie worthy. Women: young, pretty, beautiful, sexy, pregnant. Men: young, old, black, white, leading, gay, straight. 
+
+Comparing corpora. One of the most powerful types of analysis is comparing your corpus to a larger reference corpus. For example, Steven Spielberg movies versus a reference corpus of movies by other directors. 
+
+Settings > tool preferences > keyword list add directory (Spielberg) and made sure that the files that were already open were the reference files. Swap ref/main so that 24 is shown. Keyness: the frequency of a word in the text when compared to its frequency in a reference corpus. 
+
+Discussion: Making Meaningful Comparison. Keep in mind that the way you organize your text files makes a difference in the kind of questions you can ask, and the kind of results you will get. We were comparing positive versus negative reviews. The files you put in the corpus will shape the results. Representativeness, not always necessary or ideal to use all of data set at once. Worth thinking about why you might want to compare two corpora, What kind of queries make meaningful research questions, principles of corpora construction: sampling & ensuring you can get something representative.

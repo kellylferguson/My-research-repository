@@ -1,0 +1,7 @@
+Counting and Mining research data with Unix
+
+How to research data, have it counted and mined using Unix. Builds on the lessons "Preserving Your Research Data: Documenting and Structuring Data" and "Introduction to the Bash Command Line". Good for using the data accumulated for other projects, or from a bunch of different projects and locations for a new project. 
+
+Lesson will introduce a series of commands to count and mine tabulated data. Commands can be easily extended for use with non-tabulated data. Go through Preserving Your Research Data to learn how to make your data consistent and predictable. 
+
+I downloaded the figshare file, moved the zip file to the c: drive and renamed it ProgHist. 

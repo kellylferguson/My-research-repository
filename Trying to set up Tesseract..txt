@@ -1,0 +1,7 @@
+Trying to set up Tesseract.
+
+To set up Tesseract for windows. Need two files: 1. tesseract-core-20150916.exe and 2. tesseract-langs-20150916.exe. The first one is the Tesseract core application withouth language data and the second one is all the language data for Tesseract. It is portable, so you can install it on a USB stick or a different location. 
+
+Steps to install. download the two files.
+
+The first file would not open, my computer saw it as unsafe, removed the file and restarted the computer, preventing the second file from finishing to download. This seemed like a bad sign, and so I decided to come back to it later. 

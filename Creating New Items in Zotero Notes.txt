@@ -1,0 +1,49 @@
+Creating New Items in Zotero Notes
+
+Learn how to create a new item in a Zotero library and add basic metadata like title and date. Helpful to remember that Zotero began as a citation management system and that an item on Zotero contains only metadata, like a library calling card. To upload file content into Zotero, you would create an attachment to that item. 
+
+Get into python interpreter, type "python"
+Import the need python modules. Type "from libZotero import zotero"
+Got >>>
+Type "import urllib2"
+Got >>>
+Type "import datetime"
+Got >>>
+This will connect the zotero group library for this lesson using the group ID and API key. Could replace with own. Copy and paste "zlib = zotero.Library('group', '155975','<null>', 'f4Bfk3OTYb7bukNwfcKXKNLG')"
+Got >>>
+Can now creat a new item and assign it some metadata. Make it a document file and give it a title. Copy and Paste "newItem = zotero.getTemplateItem('document')"
+Got >>>
+Copy and Paste "newItem.set('title', 'Python Lesson Document')"
+Got >>>
+Add an abstract note (short description). Set creation date as current date. Copy and Paste "newItem.set('abstractNote', 'Created using a zotero python library and the write api')"
+Got >>>
+Copy and Paste "now = datetime.datetime.today().strftime("%Y-%m-%d")"
+Got >>>
+Copy and Paste "newItem.set('date', now)"
+Got >>>
+Make a request to the API to create that item. Code includes the writeFailure property so we get an error if it doesn't work. Copy and Paste "createdItem = zlib.createItem(newItem)"
+Got >>>
+Copy and Paste "if createdItem.writeFailure != False:"
+Got ...
+Add 4 spaces and copy and paste "print(createdItem.writeFailure['code'])"
+Got ... 
+Add 4 spaces and copy and paste "print(createdItem.writeFailure['message'])" and hit Enter twice
+Got >>>
+Add a tag to new item. Includes a writeFailure. Copy and Paste "tagname = 'python lesson'"
+Got >>>
+Copy and Paste "createdItem.addTag(tagname, '0')"
+Got >>>
+Copy and Paste "updatedItem = zlib.writeUpdatedItem(createdItem)"
+Got >>>
+Copy and Paste "if updatedItem.writeFailure != False:"
+Got ... 
+Add 4 spaces and Copy and Paste "print("Error updating item")"
+Got ...
+Add 4 spaces and Copy and Paste "print(updatedItem.writeFailure['code'])"
+Got ...
+Add 4 spaces and Copy and Paste "print(updatedItem.writeFailure['message'])" Hit enter twice
+Got >>>
+This code confirms the item that you created. Copy and Paste "print 'Created new item <%s> with new tag <%s>' % (createdItem.title, tagname)"
+This is what output you should get. Got "created new item <Python Lesson Document> with the new tag <python lesson>
+
+Looked for it, but the item didn't actually get created. 
