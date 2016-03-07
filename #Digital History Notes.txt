@@ -226,5 +226,25 @@ github.com/karpathy/char-rnn. Uses multi-layered recurrent neural Networks. What
 
 sonification. programminghistorian.github.io/ph-submissions/lessons/sonification
 
+March 7
 
- 
+Hollis, Topic Modelling and MALLET. "j.mp/hollis-march-7" Can be automated or done by hand. Words related to war, governance or both. Green = governance, yellow = war, red = both. Topic Modelling helps you find different topics in a number of documents that you may not have seen. Helps to decipher themes. MALLET can automatically analyse these topics. Sara M found it the best written tutorial thus far. See on slack, you can use MALLET directly in the command line or use a GUI. Hollis used the GUI version. Used this program to analyse his thesis. Came up with topics of stopwords, had to figure out how to get rid of them. Stopwords will be a place where your historical skills will come into play. Sometimes pronouns are important (ex. He = God).
+
+www.ideals.illinois.edy/handle/2142/45709 Ted Underwood.  List of stopwords used in topic modelling journals, summer 2013. Needed to tell us what stopwords were removed to show what might be missing. When making your own stopword list, one word at a time. 
+
+One of the outputs of the topic modelling tool does is arrange them as a website so you can click through to see which documents are big with each document. The Java GUI is good for a really quick topic model. Not much customizing though. Command line allows more fiddling of parameters. 
+
+Just deleted something, hopefully not important. Oh, topic modelling is used without criticisim, has been abused. Topic modelling is a simulation. The biggest issue is that it is impossible to know when you start how many topics you should have. Too few and you lose nuance. 8-bit philosphy. 
+
+Overview, not topic modelling but respects the original order of words. overviewdocs.com. Runs similarly to OpenRefine.
+
+Remember that digital history is inextricably linked to asethetic and performance. Voyant is about counting number of words and visualizing their frequency, overview counts words and looks at distribution. Topic Models finds semantic patterns. 
+
+Ben Schmidt vector models, uses R, difficult. Used it to find genered language patterns in ratemyprof. 
+
+Rawdensitydesign.com shows flows of conversation as they change over time (Hollis' project) a different way to visualize. 
+
+AntConc comparing corpora the most useful aspect. Built in from the beginning, easy to use. Better than topic modelling or voyant.
+
+workbook.craftingdigitalhistory.ca > Communicating your Findings. A helpful source of resources about visualizations as well as exercises on visualizations. Think about typography and fonts in your Twine. Don't use comic sans. Think about colour. Assessibility and design. Should we have images? Leaflet powered maps. 
+

@@ -1,0 +1,22 @@
+Presentation on Antconc
+
+Did anyone have any issues with it? Did everyone get to the end of the tutorial?
+
+Antconc is a standalone program you can download in order to do large scale data analysis. Super easy to use and straightforward, once you understand the terminology. 
+
+You can use it to keyword search all of your files, find how often, what context they appear. You can highlight the words a specific distance away to get a since of which words are associated with the keyword at a glance.
+
+You can then use collocates and make a word list to see what words most likely to appear with your keyword. 
+
+It also allows you to output your results into a .txt file, so you can save what you've done and then compare different keywords to each other.
+
+Antconc also allows you to compare different corpora to see patterns between them. In the tutorial we used a sub-section of the movie reviews, Spielberg specific reviews, and then cross examined them with the entirety of our files as a reference to see certain patterns.
+
+There didn't really seem to be any gotchas in this tutorial. The only thing was that it recommends that you save your output results with a "?" character in the name, which at least windows doesn't let you do, so I used a period instead. That was the only thing though. 
+
+What I liked about this tutorial is that in went decent lengths to make sure the person following along saw the limitations of this kind of analysis. It emphasised the selection of files that you used, the corpora that you compared, the way the files are organized will affect the results you get and the questions that they  pose. It wasn't like, here's this tool... have fun. It went through in detail the benefits as well as the limitations of the tool as well as the subjectivity of it all. 
+
+ Also, although it does use a specific example to show the theory behind it, as many of these tutorials do, because it was something that most people could probably make some educated guesses about it going in, being movie reviews, it made the whole thing seem more tangible.
+ 
+ I liked how simple it was to use. It seems like a tool that we could have tried the first class and it would have been find. This is easily something that anyone could use to analyse a bunch of text files. With the current knowledge that we do have though, I could see how this could combine with programs like wget and OpenRefine to get your files to the stage that we could use this in a fairly automated way.  It was clear in how it interrelates with other digital history tools. 
+
