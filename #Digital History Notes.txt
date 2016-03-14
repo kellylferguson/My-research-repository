@@ -248,3 +248,10 @@ AntConc comparing corpora the most useful aspect. Built in from the beginning, e
 
 workbook.craftingdigitalhistory.ca > Communicating your Findings. A helpful source of resources about visualizations as well as exercises on visualizations. Think about typography and fonts in your Twine. Don't use comic sans. Think about colour. Assessibility and design. Should we have images? Leaflet powered maps. 
 
+For Twine, look up Dan Cox twine tutorial.  Check out Melissa Ford's website has stuff about interactive writing on twine. 
+
+March 14
+
+New Cloud Atlas. A global effort to map each data place that makes up thecloud in an open and accountable way. We have set out to find and map each warehouse data centre, each internet exchange, each connecting cable and switch. Built on top of the open street map platform. 
+
+ 

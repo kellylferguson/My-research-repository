@@ -1,0 +1,12 @@
+*Being a Good Citizen
+
+# Being a Good Citizen
+
+Programs like wget are great for grabbing larger amounts of content from the web. An incredibly useful tool if you need a large amount of data and would really rather not download each document or file manually. However, although useful, there should a certain amount of caution in using a program like this. In fact, if there was a superhero-styled theme for the wget tutorial it would undoubtedly be "with great power, comes great responsibility." At the beginning of the tutorial, it makes a semi-joke, semi-serious warning of downloading the "entire internet"; this idea that, if the user is not specific enough in their commands, wget will continue to download much more than the files you were expecting. Much of the tutorial is focused on explaining the little commands that needed to be added to the wget command as a whole to allow for things like time delays and limiting the rate of download. These add-ons prevent the source website or database from being overwhelmed by your requests, preventing others from using it or even crashing the whole site.
+
+This whole idea of including limitations in your wget command is the idea of being a good internet citizen. Similarly to being a good citizen outside of the digital world, being a good internet citizen involves both personal, selfish motivations and as well as larger unselfish motivations. 
+
+
+
+
+

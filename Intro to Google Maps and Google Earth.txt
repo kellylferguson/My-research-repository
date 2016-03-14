@@ -1,0 +1,27 @@
+Intro to Google Maps and Google Earth
+
+Google Maps. Google My Maps and Google Earth allows you to create digital maps. With a Google account you can create and edit personal maps by clicking on My Places. In My Maps you can import data from a spreadsheet (longitudes and latitudes, place names etc). Automates a process known as geocoding. Allows you to plot historical data on a map.
+
+Go into My Maps Engine Lite: google.com/maps/d/. Click "Take a Tour". Change title from Untitled Map to My test map. Next you can use the search bar. Search the location of your current research project. Added war museum to the map. 
+
+You can import data by clicking on the Import button under the Layer tab. Using the sample data "UK Global Fat Supply" - a list of different kinds of fats and their associated locations. Drag file into box shown after clicking Layer. Offers options of which column should be used to identify as the location. Choose "place". Then offers which column should be used as the label. Choose "commodity". Now have a global map of the major exporters of fat to Britain in the 1890s
+
+You can change the style to distinguish between different types of fat. Go to UK Global Fats Layer, click style, click uniform style and change to Style by data column: commodities.  Play with the options. 
+
+Google will only import the first 100 rows of a spreadsheet. Only allows three data sets to a map (so a max of 300 features). 
+
+Creating Vector Layers. You can create new map layers. Vector layers are points, lines of polygons used to represent geographic features. Points for key locations, lines for streets or railroads, polygons for areas (fields, buildings etc). In Google Maps, you can add a label, a text description and links to websites or photos. Click add layer button (call layers 1). Uncheck the Fats layer. 
+
+Need to decide what base map to use. Different base maps available for different needs. Satellite imagery is standard, but could use light landmass or light political instead. Click on arrow to the right of Base Map, choose Satellite. Start by adding some placemarks (points). click on the spot on map where you want the placemark to appear. Allows you to label it. Added Charlottetown and that it was founded in 1765. Can change layers appearance with the Style, Data, and Label functions. Style changes appearance, Data lets you see the description you wrote, Label allows control of seeing the name or description next to it on the map. 
+
+In a new layer, adds some polygons. Pick a road, trace it for a while and then tell it to finish. Can change the colour of the line. Connect line to make a shape (a polygon). Then describe/label it. Can change colours or opaqueness (will automatically be shaded in the colour of the line). 
+
+Sharing your custom map. Use the sharing features for twitter, facebook etc. You can embed it on your website as well. Export as an KML file. 
+
+Google Earth. Unlike Google Maps, you need to install it. Has a bunch of ready-to-go layers that can be turned on and off by selecting them (roads, pictures, borders etc). Under gallery, you can find somet pre-scanned historical maps (The Rumsey historical maps). Can click on these icons to get an information panel which allows you to overlay the map on Google earth.
+
+KML: Keyhole Markup Language files. Google developed the format KML to save and share map data. A very portable type of file. You can import data from Google Maps into Google Earth. 
+
+Imported KML file from previous part. Create a polygon and name it 
+
+Adding Scanned Historical Maps. Within Google earth you can upload a digital copy of a historical map. Can place it over the Google Earth imgae in the browser. Called an overlay.  Start by identifying the images you want to you, the image within google earth and the map you want to overlay with. File can be a jpeg or tiff, but not pdf. Witihng Google earth, identify area of the map you want to overlay. When you are decided, click add image overlay. A new window will appear. Use the tools to adjust overlay so that it aligns properly with satellite image. When satisfied, click ok.  You can save a copy of the image, or you can save in Google earth (save my places) as a kml file. 

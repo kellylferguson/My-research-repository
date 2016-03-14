@@ -1,0 +1,19 @@
+Getting Started with  Palladio
+
+So I lost all of my notes from going through the tutorial up until the Gallery section and refuse to go back through to re-write them. 
+
+Downside of this text editor, no undo option. 
+
+WHY ARE NONE OF THE CATEGORIES (LIKE GENRE 1) EXPLAINED?
+
+Filter gallery by date and other attributes. Can filter the same way that you did for the map, using the facet and timeline feature.
+
+View data as a network diagram. Good for showing relationships among entities. To use data as a network diagram, get rid of filters and click on graph. 
+
+Set the parameters of your network diagram. You need to tell Palladio which two attributes of your data you want to explore. For Source choose Genre 1. For target, Genre 2. SUPER COOL NETWORK GRAPH. To highligh one kind of node to distinguish between the two, click the highlight box. to size the nodes, click size nodes. Can use the same filters as before. 
+
+Share your work.  You can't embed interactive Palladio diagrams on webpages but can produce static images, by either screenshot or the download link within graph settings. saves as svg files.
+
+Download your work. Palladio doesn't save your dat, but you can export your data model (the way your configured your data) and upload it later. To do this click download at the top, This will download a file with extension .json. 
+
+Other cool things Palladio can do. You can use other georeferenced maps (like old maps rather than the map provided) as basemaps. You can also work with multiple tables of data, connected relationally. Exports lists of data using the same filtering mechanism we used for visualizations, create point-to-point maps, visualize spans of time with the timespan feature. 
