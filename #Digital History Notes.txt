@@ -254,4 +254,39 @@ March 14
 
 New Cloud Atlas. A global effort to map each data place that makes up thecloud in an open and accountable way. We have set out to find and map each warehouse data centre, each internet exchange, each connecting cable and switch. Built on top of the open street map platform. 
 
- 
+Georectify. Got a map. Because all maps are a distortion of the world surface, to use a historical map we have to tell the computer where the points of the globe are so that it distorts it properly. Do so by pinning it using websites like (warp.worldmap.harvard.edu). Used Champlain's map of Ottawa and fire insurance map of Ottawa. 
+
+On the warp.worldmap.harvard.edu, make an account. upload image of the map. Make up a name for the file that hasn't already been chosen. Click rectify. Gives two images, the historical map and the open street map. Start adding control points on each side. At least three points. Than click warp image.
+
+Fork xtina-r/daea. Go to index, go to script and click edit:
+
+var map = L.map('map', {
+    center: [47.5668, -52.7120],
+    zoom: 13,
+    layers:[
+      L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png'), [This line gives the base map]
+      L.tileLayer('http://warp.worldmap.harvard.edu/maps/tile/4322/{z}/{x}/{y}.png') [This gives the rectified]
+      
+the url from warp doesn't have {}brackets, change that. With some fusting around you can layer multiple maps. Make changes and commit changes. Need to change the coordinates (for Ottawa - center: [45.4, -75.7]. Commit changes. May have to change zoom settings as well. 
+
+maps.stamen.com
+
+Go to script:
+
+ //enter path for .csv here
+            omnivore.csv('sites/aa-sites-popup.csv')
+             .on('ready', function(layer) {
+             
+Go to site directory in github/daea. Define the points centreblock coordinates, victoria coordinates, corner of sparks and elgin coordinates. the csv file has coordinates, historical time period, ignored time period. Uses a bit of html to style the names of location. Quotations for site info to prevent the comma from messing things up.  To get coordinates go to gps visualizer.
+
+Go into sites, change a site to p.html for parliament.
+
+Centre Block Parliament: 45.42506, -75.699829 (45.42506, -75.699829, Centre Block Parliament, "this is a point",<a href="sites/p.html">
+
+Palladio. Possible projects? How did you guys find it? Can be a little difficult if your excel spreadsheet isn't uniform. Lends itself to certain types of spreadsheets, a comprehensive data set, helps if it lends to maps and if it is visual. Another option for spreadsheet data is raw.densitydesign.org.
+
+We don't do a good job of teaching the consumability of maps. The visual is given deference, seen as more true almost, having more weight. 
+
+Need to think about who your public is? Are you using this for your own understanding or presentation? 
+
+Timeline JS a timeline builder. Can embed it into webpage. Storymap JS, allows you to imbed material into a leaflet map. 
