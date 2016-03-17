@@ -1,0 +1,42 @@
+Data Extraction and Network Visualization of Historical Sources
+
+This tutorial looks at how to extract data from historical sources using non-technical methods developed in Qualitative Data Analysis and Social Network Analysis, and how to visualize it (Palladio). This tutorial cannot replace any of the existing generic network analysis textbooks. Tutorial will focus on the extraction from unstructured text and visualize it with palladio. It is conisiderably more difficult to extract network data from unstructured text. The challenge is to systematize text interpretation.
+
+About the case study. The first person narrative of Ralph Neumann, a Jewish survivor of the Holocaust. Text is online.
+
+Developing a coding scheme. One of the most difficult parts of visualizing network relationships is to decide who should be part of the network and which relations between the selected actors are to be coded. The main questions during this process are: Which aspects of relationships between two actors are relevant? Who is part of the network? Who is not? Which attributes matter? What do you aim to find?
+
+Note that coding schemes in general are not able to represent the full complexity of sources in all their subtleties and ambivalence. In many cases network data and visualizations will only make sense once reunited with their original context, in this case the primary sources from which it was extracted. Important that you and others can retrace your steps and understand how you define your relations. 
+
+All major network visualization tools let you specify whether a network is directed like this one or undirected. Quite often, however, it doesn't make sense to work with directionality (if the two actors are part of the same organization, for example). The categories and subcategories that emerge during a long process of coding different types of texts and different types of support networks. Not all tools will allow you to represent parallel edges and will either ignore the second act of help which occurred or try to merge the two relations. Palladio can handle this.
+
+Visualize network data in Palladio. Once you have come up with a coding scheme and encode your resources you are ready to visualize the network relationships. Make sure all empty cells have 99 for unknown. Create a new copy of the file and delete the codes for the different categories so that your sheet looks like figure 5. All spreadsheets allow you to export tables as either .csv or .txt files. 
+
+Note: Palladio is designed for quick visualizations rather than sophisticated network analysis. 
+
+1. Open Palladio
+2. Start
+3. Load attribute data
+4. Edit attributes
+5. Load relational data (ex: click person and add new table, paste all of the relational data for person)
+6. Link attributes and relations. (Giver: go to bottom, click extension, click people. Do the same for recipient)
+7. Identify temporal data. (Click on Time step start, and select data type Year or Date. Do the same for Time step end.) 
+8. Open the Graph Tool
+9. Specify source and target nodes. (ex. Givers and recipients for source and target).
+10. Highlight nodes. (Click highlight boxes)
+11. Facet filter. (select 3 in form of help column. Date of activity. 
+
+Network visualizations can be incredibly suggestive. Remember that whatever you see is a different representation of your data coding and the choices you made along the way. There will be errors you might have to fix. 
+
+12. Bipartite network visualization. (Bipartite networks have two different types of nodes an example could be to select people for the first node type, and point in time as the second. Essentially has two or more main centres, that can connect but don't have to.) 
+13. Timeline. (easy way to visualize change in network)
+14. Time span. 
+15. Node size. (can size nodes based on actor attributes, helpful if you were to represent the sum)
+16. Export visualizations.
+17. List, Maps and Galleries. 
+
+The added value of networks visualizations. Careful extraction of network data from text is time consuming and exhausting, requires concentration at every step along the way. Is it worth it? Yes, could not have made the same observations otherwise. 
+
+Playing with your data. with this type of data it isn't just playing but rearranging and thereby constantly rethink what you know about your topic and what you can know about your topic. Tool to understand complex relations with. 
+
+A few pratical points: Collect and store data in one spreadsheet and use a copy for visualizations. Make sure you understand the basic rational behind the centrality and layout algorithms you choose, they will affect view of data. Don't hesitate to revise and start over if something in coding scheme isn't working out as expected. 
