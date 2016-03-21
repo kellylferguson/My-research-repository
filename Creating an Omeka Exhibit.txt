@@ -1,0 +1,12 @@
+Creating an Omeka Exhibit
+
+Before you begin: Map exhibit. Do some thinking. What argument do you want to make? How do you want to make it? Sections can be thematic, chronological, stylistic etc. Depends on message. 
+
+Add and exhibit. Click on the exhibits tab and then click add an exhibit. Fill out the form on the top half of the page. Slug = a machine-readable name for your exhibit. 
+
+Add a page. Pages are where you'll stick the actual items in your exhibit. An exhibit can have multiple pages, and you can drag and rop them to rearrange the order. Click add page. On the following page you'll enter some information and pick a layout for exhibit page. 
+
+Add a content block to your page. On following page, you'll see option for page title and slug. Fill it in. New Block = pages are made up of blocks, can be files and text, just files or text. Click the file with text option and then the green add new content block. 
+
+Add content to your content block. In Block 1 (file with text) click add item.  click on your item then click select item. add a caption (optional), click apply button. When done, click view public page to see how it looks. 
+

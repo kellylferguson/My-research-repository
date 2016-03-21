@@ -290,3 +290,22 @@ We don't do a good job of teaching the consumability of maps. The visual is give
 Need to think about who your public is? Are you using this for your own understanding or presentation? 
 
 Timeline JS a timeline builder. Can embed it into webpage. Storymap JS, allows you to imbed material into a leaflet map. 
+
+March 21
+
+Network analysis and network visualization. social network analysis and social network visualization are not the same thing. Analysis can be done without ever drawing a visualization or network. Dots = nodes. Need to be the same type of thing. Can easily connect them for a visualization, but a metric would not be valid if say some were teacher and some were students, bi-partite network. Links between them= edges. Can start making assumptions about the relations when you start mapping it out. Called a triad when the three nodes are connected in a triangle. Edges can be directed or undirected. Undirected makes no assumptions about analysis between relationships. For an information flow, directed edges makes a difference. Usually will be undirected, unless you know for sure (letters for example). For social network analysis, the type of node, make sure they are all the same type. Edges, can be a person itself, weight of the link is number of women for example. Edges can have weight. 
+
+What can you get from visualizatio? many historians don't use analysis, because it is difficult, whereas visualization is easier. If you can discern a relationship, anything can be a visualization. Palladio doesn't allow for analysis, only visualizes in a single way. Could have gone into more detail in his coding process, why did he choose the seven that he did? Describe his tables a little more. How did you get from the archive, to how your data is currently set up? Often people does network analysis because that is what they know how to use. How much the method obscures as they reveal. 
+
+Elise liked that During was transparent about what we as researchers contribute to the coding schemes. Data coding and visualizations vs. question-driven close reading and interpretation are not separate processes but are intertwined. The myth of objectivity. 
+
+Make sure you understand the baisc rationale behind any centrality and layout algorithms, as they will affect your view on your data. How you think about your data and their relationships affects the results. 
+
+Scott Weingart: Generally network studies ares made under the assumption that neither the stuff not the relationships are the whole story on their own. If you're studying something with networks, odd are you're doing so because you think the objects of your studyare interdependent rather than independent. Rerpresenting information as a network implicitly suggests not only that connections matter, but that they are required to understand whatever's going on.
+
+Metrics. One measurement of centrality= number of connections (closeness centrality). weak ties are the glue that hold together social activites, those who connect separate cliques. Helps people get jobs etc. metric of betweeness centrality. The people on whom some phenomenon turns. How you calculate someone who is betweeen, look at each pair of individuals in turn, count the links, count number of shortests, the person who sits upon the most shortests paths among all of the pairs, that person is most between. 
+
+Can use social networks for dissemination of ideas. Theories of evolving networks, how do networks actually form. NetLogo.
+
+gephi.org. tool for social network analysis. Never save in .gephi format, save in .net or .html. Easy way to get data into gephi, is to use a text editor and make an adjacency list. using colons. gephi.org/users/supported-graph-formats/csv-format/ Save as a .csv will tell gephi it is undirected.
+

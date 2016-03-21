@@ -1,0 +1,32 @@
+Up and Running with Omeka.net 
+
+omeka.net makes it easy to create websites that show off collections of items. Sign up for an account
+
+Create new omeka site. Click add a site. To see what it looks like, click view site.
+
+An empty Omeka site. To go back to dashboard, click back. Now click manage site. 
+
+Switch Themes. Click on Appearance, press use this theme to activate it. 
+
+Install some plugins. Click on plugins, click install button for Exhibit Builder (leave options as they are) and Simple Pages.
+
+Add an item to the archive. Click items, and add an item. 
+
+Describe new item. Dublin Core refers to the descriptive information you'll enter about your item. All of this information is optional, and you can't do it wrong, but be consistent. Check the public box so that people can see it. Use add input button to add multiple fields.
+
+A tricky question. Whether you are describing the object or the representation of the object is up to you. But once decided, be consistent. 
+
+Attach a file to your item record. Once you've added the Dublin Core metadata, you can attach a file to your item by clicking Files at the tope of the Dublin Core for. Can add multiple files, but only have 500 MB of storage space. You can add tags, and by clicking on item type metadata, say what kind of thing- person, place, animal, vegetable, mineral - it is etc. When all done, click the green add item button.
+
+You have an item! List contains all the items you've added. To see the public view, click view public page. 
+
+Create a collection. Go to dashboard, click on Collections tab, click add a collection.
+
+Enter information about your collection. Metadata is king! Click public. 
+
+Add items to collection. Click on items tab, click edit button. 
+
+Choose the collection. On the batch edit items page. Select the collection you'd like to add your items to. 
+
+Check out your new collection. Return to public site, click on browse collection to see collection. 
+
