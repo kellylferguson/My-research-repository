@@ -240,7 +240,7 @@ Overview, not topic modelling but respects the original order of words. overview
 
 Remember that digital history is inextricably linked to asethetic and performance. Voyant is about counting number of words and visualizing their frequency, overview counts words and looks at distribution. Topic Models finds semantic patterns. 
 
-Ben Schmidt vector models, uses R, difficult. Used it to find genered language patterns in ratemyprof. 
+Ben Schmidt vector models, uses R, difficult. Used it to find gendered language patterns in ratemyprof. 
 
 Rawdensitydesign.com shows flows of conversation as they change over time (Hollis' project) a different way to visualize. 
 
@@ -309,3 +309,4 @@ Can use social networks for dissemination of ideas. Theories of evolving network
 
 gephi.org. tool for social network analysis. Never save in .gephi format, save in .net or .html. Easy way to get data into gephi, is to use a text editor and make an adjacency list. using colons. gephi.org/users/supported-graph-formats/csv-format/ Save as a .csv will tell gephi it is undirected.
 
+April 4

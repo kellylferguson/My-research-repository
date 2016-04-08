@@ -1,0 +1,42 @@
+OpenRefine
+So now, with the help of the section on Wget and/or the section on Data Mining, you should have a large pile of data at your disposal. Now that you have that data, you probably want to be able to analyse that data. Before we can do this though, it can be helpful to clean up the data so that it is easier to work with. One easy tool that can help us do this is a program called OpenRefine. Depending on your familiarity with this tool, you may have already heard of it. If you haven’t I recommend going through what it is first. You can also skip this tool if you don’t think it would be useful for your research. 
+[[What is OpenRefine?]]
+ [[When would it be a good time to use OpenRefine?]]
+[[Why should I use OpenRefine]] 
+[[How do I set up OpenRefine?]
+[[My data is already cleaned up, skip ahead]]
+[[Go back to list of Projects]]
+
+What is OpenRefine?
+OpenRefine is a program, specifically an IDT (Interactive Data Transformation Tool) that allows you to make quick tweaks and changes to a large amount of data. Once cleaned up, allows you to look through unstructured data and start making connections. 
+[[go back to intro]]
+[[go back to projects]]
+[[When would it be a good time to use OpenRefine?]]
+
+When would it be a good time to use OpenRefine? 
+You may be asking yourself, I already have my data why do I need to stop and use this program before actually coming to conclusions with it? The thing is that often times, when you have a lot of data, there are going to be some minor issues with it. Sometimes there are duplicates that get picked up, sometimes there are issues with spelling, and sometimes things aren’t grouped the way you would like. 
+Here’s an example: I was working on an exhibition proposal for a new collection at a heritage site in New Brunswick. As part of that process, my group and I did some census research to figure out who in this family would have owned the items in the collection. We quickly found, however, that the census had a couple different spellings of the name Dibblee. Sometimes it was written Dibblee, sometimes it was Diblee, and sometimes it was Dibble. They were all, at this point in time, referencing the same extended family. A program like OpenRefine allows you to take Arthur Dibblee, Arthur Dibble, and Arthur Diblee and combine them so that they are all recognized as referring to the same person, if you know that this is true. Otherwise, your data will reflect three different people named Arthur. 
+[[go back to intro|OpenRefine]]
+[[go back to projects]]
+[[Why should I use OpenRefine?]]
+
+Why should I use OpenRefine?
+Short Answer: OpenRefine allows you to remove duplicate records, blank records, separate data that got combined along the way and combine data that is separate even though it shouldn’t be. It also allows you to get to know your data and begin making connections by going through some of the different features (like clustering, and the various facet features). 
+Long answer: Like anything in historical research, tools like OpenRefine don’t exist in a vacuum. To find a brief discussion of the implications of this tool [[click here]]. If you don’t really care about the implications, or just don’t have time right now feel free to keep learning about OpenRefine through your normal navigation tools.
+[[go back to intro|OpenRefine]]
+[[go back to projects]]
+[[How do I set up OpenRefine?]]
+
+How do I set up OpenRefine?
+Setting up OpenRefine is fairly straightforward as far as digital tools go. Unlike some, you don’t need to use the command line, or some type of python extension. Go to openrefine.org and download 2.6 windows kit. Fun fact that I learned while downloading this program: make sure you have Java installed and up-to-date. I tend to be one of those people that never updates and downloads when my computer asks me to and so I had to get Java as part of this process. (PSA: Don’t be like me, listen to your computer when it asks to update things). Once Java is installed, OpenRefine should install without issue.
+Another thing to note: Although OpenRefine opens in your preferred internet browser, it is running locally on your computer. The data is not being stored online, so keep that in mind in terms of saving and whatnot. 
+[[go back to What is OpenRefine?]]
+[[go back to Intro]
+[[Keep going]]
+
+Keep going
+So now you have OpenRefine set up… CONGRATS! You can now clean up your data, whether that is the data you got with the help of Sara, or the data you got on your own. Go through the different features, check out the Programming Historian tutorial(link), and experiment to figure out and better understand your data. 
+
+Long Answer
+If there is an overarching lesson behind OpenRefine it would be to question your data when you collect it. Don’t assume that it is fine the way that it is, but go through and make it more straightforward and clear so that it is easier to work with in the future. While doing this, however, remember that digital tools are just as subjective as any other research tool. The decisions you make at this point in your project will influence the results you get later in your analysis. To go back to my [[Dibblee|When would it be a good time to use open refine]] example from earlier, grouping the Dibblees, the Dibbles and the Diblees together may make sense at the time period you are looking at, however it can also hide the fact that the Dibbles and the Dibblees eventually consider themselves separate families after generations of that division in spelling. 
+The way that you group categories, names, spellings etc. implies certain assumptions that you have about your data and will internalize those assumptions throughout your later analysis. Keep this is mind as you go through the rest of your project and acknowledge the assumptions inherent in your data as you would if this were being done via a more traditional approach.

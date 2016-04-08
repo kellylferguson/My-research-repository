@@ -1,0 +1,47 @@
+Analysing your data 
+Now that you have cleaned up your data, with the help of OpenRefine, you can now start analysing that data. A possible problem is that you have A LOT of data and are not really sure where to start. In this project we have two possible options to begin understanding and analysing your data, MALLET and AntConc. These are definitely not the only tools you can use to look at and make connections with your data, but hopefully this will be a good introduction to some of the options and you can eventually find others that may work better for you.
+So first things first, are you going to use MALLET or AntConc? I would recommend at least checking out the intro to both and see which one you think would be most helpful to your research specifically. 
+[[What is MALLET?]]
+[[What is AntConc?]]
+
+What is MALLET?
+MALLET is one of many programs you can use for topic modelling. Topic modelling is a process that takes a text and looks for patterns within it. It makes assumptions based on relationships between words to come up with a list of topics. MALLET can be used either through a GUI (graphical user interface) or through the command line. The command line gives a more fined tuned use, with greater ability to fiddle with the parameters. If you aren’t sure about using the command line, or if you want a refresher, check out our command line discussion [[here|command line]].
+ [[Actually I want to use Antconc|What is AntConc?]]
+[[When would it be a good time to use MALLET?]]
+[[Why should I use MALLET?]]
+[[How do I set up MALLET?]]
+[[Go back to list of Projects]]
+
+When would it be a good time to use MALLET?
+It would be a good time to use MALLET if you have a large number of documents. Although you could use it for a couple of documents, the key with topic modelling is that it can go through hundreds of documents that would take forever going through by hand and pull out patterns that you may miss. 
+You’ll need to make sure that the files you want to go through are saved in a single folder in your c:\mallet folder. They all need to be in .txt format and you’ll need to have them split up for how you want to look at them. For example, if you want to look at things at the level of individual paragraphs, save each paragraph as a separate file. 
+[[go back to projects]]
+[[go back to intro|What is MALLET?]]
+[[Why should I use MALLET?]]
+
+Why Should I use MALLET?
+Short Answer: You should use MALLET if you are interested in finding patterns that you may not have seen on your own. It helps you to decipher themes in your research. 
+Long Answer: To see a more detailed discussion of the strengths and weaknesses of MALLET, [[click here|long answer MALLET]]. If you don’t really care about the implications of this tool, that’s fine, feel free to keep moving on.
+[[go back to intro|what is MALLET?]]
+[[How do I set up MALLET?]]
+[[Go back to projects]]
+
+How do I set up MALLET?
+To install MALLET, go to mallet.cs.umas.edu/index.php. I installed MALLET 2.0.7 (there is a 2.0.8 model but I haven’t used it). Once you have downloaded the file, unzip it into your c:\drive so that you can find it easily in the command line. Also make sure you have installed the Java developer’s kit. You’ll need to go into your computer, into systems, and click “advance systems settings”. Type “MALLET_HOME” into the “variable name” box, and type the path of your MALLET file (c:\mallet). This will tell the computer where to find the components of MALLET. 
+Once you’ve done this, you can run MALLET through the command line. There are 9 MALLET specific commands that you can use. They are listed in MALLET and you can find them through the command `bin\mallet`.
+BONUS TIP: When I originally learned how to use MALLET I accidentally unzipped the file within another file so that the location of the program was actually c:\mallet\mallet. Make sure you don’t do this because your computer will not be able to find it and it will be frustrating… trust me.
+[[go back to projects]]
+[go back to intro|what is MALLET?]]
+[[Keep Going]]
+
+Keep Going
+You have now learned about MALLET and how to use Topic Modelling to better understand your data! If you are still curious about the opportunities available using other tools, check out our AntConc discussion. If you realize that you do not have data that has been cleaned up enough, check out the OpenRefine discussion. If you STILL don’t have any data, look at the data collection project. If you are tired of me asking these questions and want to move on to a different set of skills, I suggest that you take a look at Brad’s discussion on the organization of your research. 
+[[back to intro|what is MALLET?]]
+[[Antconc]]
+[[openrefine]]
+[[data collection]]
+[[bibliographic organization]]
+
+Long Answer
+Thank you for taking a second to think about the implications of a tool like MALLET. While the tools we’ve been discussing have been useful, it’s important to be reflective about how they impact our research. The thing about MALLET is that, while it is a really useful tool, it can sometimes be used without criticism. MALLET, at its most basic, is a simulation. You give the computer a set of parameters and it runs a simulation based on how many topics you are expecting it to have. It is also impossible to know when you start how many topics you should have. Whatever number of topics you tell your computer, which is going to influence your results, thereby affecting your research. 
+Something else that will affect your results is the removal of stopwords. Stopwords are words like “the, it, is, to, as” etc. These words are perceived as not containing significance to the search and tend to come up a lot, which can therefore influence your topic modelling.  When you take these words out, however, you are changing the way that the computer will read your data, and can cause you to miss interesting connections with these words. While many people do remove them, and it is fine to do so, it is important to acknowledge how this will influence your results and to be transparent in their removal. Listing the stopwords removed as part of your methodology is one way to do this. 
